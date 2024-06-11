@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-sm" aria-label="Third navbar example">
+  <a class="navbar-brand" href="/">KC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample03">
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+        <li class="nav-item">
+        <a class="nav-link" href="/" {% if page.url == "/" %}style="color: black;"{% endif %}>Home</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="/projects.html" {% if page.url == "/projects.html" %}style="color: black;"{% endif %}>Projects</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="/photos.html" {% if page.url == "photos.html" %}style="color: black;"{% endif %}>Photography</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about.html" {% if page.url == "../about.html" %}style="color: black;"{% endif %}>About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
