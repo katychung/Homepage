@@ -1,0 +1,29 @@
+---
+layout: default
+title: Protected Page
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <script type="text/javascript">
+        function checkPassword() {
+            var password = prompt("Enter the password:");
+            if (password === "your-password") {
+                document.getElementById("protected-content").style.display = "block";
+            } else {
+                alert("Incorrect password!");
+            }
+        }
+    </script>
+</head>
+<body onload="checkPassword()">
+    <div id="protected-content" style="display:none;">
+        <h1>{{ page.title }}</h1>
+        <p>This is the protected content.</p>
+    </div>
+</body>
+</html>
