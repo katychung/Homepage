@@ -52,3 +52,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 timezone: Japan
+
+collections:
+  projects:
+    output: true
