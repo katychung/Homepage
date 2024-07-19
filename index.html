@@ -18,7 +18,7 @@ layout: default
               <div class="card-body">
                 <h5 class="card-title">{{ project.title }}</h5>
                 <p class="card-text text-truncate">{{ project.description }}</p>
-                <a href="/{{ project.url }}">See more</a> 🔒
+                <a href="{{ site.url }}{{ site.baseurl }}{{ project.url }}">See more</a> 🔒
               </div>
             </div>
         </div>{% endfor %}
