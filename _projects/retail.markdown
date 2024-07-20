@@ -1,7 +1,7 @@
 ---
 layout: project_key
 title: "Retail DX"
-date: 2024-07-10
+date: 2024-07-10 00:00:00
 description: "Bringing data analytics to Japan's retail stores."
 teaser-image: assets/img/retail-teaser.png
 ---

@@ -1,6 +1,7 @@
 ---
 layout: project_key
 title: "Connected Store Experience"
+date: 2022-08-01 00:00:00
 project-date: "May 2022 - August 2022"
 description: "Leading Japan entertainment company connecting customers to stores."
 teaser-image: assets/img/gp-teaser.png

@@ -8,12 +8,11 @@ layout: default
 
     <div class="row py-4">{% for project in site.projects %}
         <div class="col-md-6">
-          <div class="card my-4"><a href="{{ project.url }}">
+          <div class="card my-4"><a href="{{ site.url }}{{ site.baseurl }}{{ project.url }}">
             <img src="{{ project.teaser-image }}" class="card-img-top" alt="..."></a>
               <div class="card-body">
-                <h5 class="card-title">{{ project.title }}</h5>
+                <h5 class="card-title">{{ project.title }} 🔒</h5>
                 <p class="card-text text-truncate">{{ project.description }}</p>
-                <a href="{{ site.url }}{{ site.baseurl }}{{ project.url }}">See more</a> 🔒
               </div>
             </div>
         </div>{% endfor %}

@@ -1,6 +1,7 @@
 ---
 layout: project_key
 title: "DIY Animated Video Platform"
+date: 2018-05-01 00:00:00
 project-date: "2014 - 2018"
 description: "Vyond is a leading DIY animated video SAAS platform for B2B."
 teaser-image: assets/img/ga-teaser.png

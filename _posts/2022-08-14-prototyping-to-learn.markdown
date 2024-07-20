@@ -12,4 +12,3 @@ We could say that that there are at least three types of prototyping:
 2. Physical (e.g. moving through a physical space)
 3. Conversational (e.g. written communication, real life)
 
-With that in mind, in your current or future projects - what do you want to learn?

@@ -1,72 +1,69 @@
 ---
 layout: default
 ---
+<div class="row py-5 my-5">
+    <h1>ハロー👋🏼 I am Katy,</h1>
+    <!-- <p class="fs-5 lh-1">Tokyo-based experience designer.</p> -->
+    <p class="fs-5 lh-1">British-born, multi-cultured, polylingual, Tokyo-based experience designer.</p>
+    <p class="fs-5 lh-1">Currently supporting a DX project for the retail industry.</p>
+    <p class="fs-5 lh-1">Previously Goodpatch, Oracle, Vyond, Ribose and OPX Studio.</p>
+</div>
 
-    <div class="row py-5 my-5">
-        <h1>ハロー👋🏼 I am Katy,</h1>
-        <!-- <p class="fs-5 lh-1">Tokyo-based experience designer.</p> -->
-        <p class="fs-5 lh-1">British-born, multi-cultured, polylingual, Tokyo-based experience designer.</p>
-        <p class="fs-5 lh-1">Currently supporting a DX project for the retail industry.</p>
-        <p class="fs-5 lh-1">Previously Goodpatch, Oracle, Vyond, Ribose and OPX Studio.</p>
+<div class="row py-4">
+    <p class="fs-6 font-monospace">Past Projects・過去のプロジェクト</p>{% for project in site.projects %}
+    <div class="col-md-6 my-2">
+      <div class="card"><a href="{{ site.url }}{{ site.baseurl }}{{ project.url }}">
+        <img src="{{ project.teaser-image }}" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">{{ project.title }} 🔒</h5>
+            <p class="card-text text-truncate">{{ project.description }}</p>
+          </div>
+        </div>
+    </div>{% endfor %}
+</div>
+
+<div class="row py-5">
+  <p class="fs-6 font-monospace">Photography・フォトグラフィー</p>
+  <div class="col-sm-3 mb-3 mb-sm-0">
+    <div class="card shadow">
+      <img src="assets/photos/2-1.jpg" class="rounded" alt="...">
     </div>
-
-    <div class="row py-4">
-        <p class="fs-6 font-monospace">Past Projects・過去のプロジェクト</p>{% for project in site.projects %}
-        <div class="col-md-6">
-          <div class="card my-4"><a href="{{ project.url }}">
-            <img src="{{ project.teaser-image }}" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">{{ project.title }}</h5>
-                <p class="card-text text-truncate">{{ project.description }}</p>
-                <a href="{{ site.url }}{{ site.baseurl }}{{ project.url }}">See more</a> 🔒
-              </div>
-            </div>
-        </div>{% endfor %}
+  </div>
+  <div class="col-sm-3 mb-3 mb-sm-0">
+    <div class="card shadow">
+      <img src="assets/photos/2-2.jpg" class="rounded" alt="...">
     </div>
+  </div>
+  <div class="col-sm-3 mb-3 mb-sm-0">
+    <div class="card shadow">
+      <img src="assets/photos/2-3.jpg" class="rounded" alt="...">
+    </div>
+  </div>
+  <div class="col-sm-3 mb-3 mb-sm-0">
+    <div class="card shadow">
+      <img src="assets/photos/2-4.jpg" class="rounded" alt="...">
+    </div>
+  </div>
+</div>
 
-        <div class="row py-5">
-          <p class="fs-6 font-monospace">Photography・フォトグラフィー</p>
-          <div class="col-sm-3 mb-3 mb-sm-0">
-            <div class="card">
-              <img src="assets/photos/2-1.jpg" class="rounded" alt="...">
-            </div>
-          </div>
-          <div class="col-sm-3 mb-3 mb-sm-0">
-            <div class="card">
-              <img src="assets/photos/2-2.jpg" class="rounded" alt="...">
-            </div>
-          </div>
-          <div class="col-sm-3 mb-3 mb-sm-0">
-            <div class="card">
-              <img src="assets/photos/2-3.jpg" class="rounded" alt="...">
-            </div>
-          </div>
-          <div class="col-sm-3 mb-3 mb-sm-0">
-            <div class="card">
-              <img src="assets/photos/2-4.jpg" class="rounded" alt="...">
-            </div>
-          </div>
-        </div>
+<div class="row py-5">
+    <p class="fs-6 font-monospace">Writings</p>
+      {% for post in site.posts %}
+          <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+      {% endfor %}
+</div>
 
-        <div class="row py-5">
-            <p class="fs-6 font-monospace">Writings</p>
-              {% for post in site.posts %}
-                  <a href="{{ post.url }}">{{ post.title }}</a>
-              {% endfor %}
-        </div>
-
-
-        <div class="row py-5">
-          <p class="fs-6 font-monospace">About・私について</p>
-          <div class="col-md-4">
-            <img src="assets/me.png" class="img-fluid rounded" alt="...">
-          </div>
-          <div class="col-md-8">
-              <p>My name is Katy, I was born and raised in the UK.</p>
-              <p>Growing up fascinated with technology, the emerging internet, art and design. I went to university and graduated with a BSc in Interactive Media Design. Since then, I have lived and worked in a number of countries including London, Hong Kong, Melbourne, Australia and now Tokyo.</p>
-              <p>I've been a UX Designer in a design studio, multiple start-ups and a large IT corporation. Collaborating with multi-disciplinary teams to plan, design, testand launch.</p>
-              <p>I speak native English, fluent Cantonese, Hakka and Japanese (N2, July 2021).</p>
-              <p>Outside of "work", I like to do lots of walking, bicycling and photography 📷</p>
-              <p>Contact: katy24@gmail.com</p>
-          </div>
-        </div>
+<div class="row py-5">
+  <p class="fs-6 font-monospace">About・私について</p>
+  <div class="col-md-4">
+    <img src="assets/me.png" class="img-fluid rounded shadow" alt="...">
+  </div>
+  <div class="col-md-8">
+      <p>My name is Katy, I was born and raised in the UK.</p>
+      <p>Growing up fascinated with technology, the emerging internet, art and design. I went to university and graduated with a BSc in Interactive Media Design. Since then, I have lived and worked in a number of countries including London, Hong Kong, Melbourne, Australia and now Tokyo.</p>
+      <p>I've been a UX Designer in a design studio, multiple start-ups and a large IT corporation. Collaborating with multi-disciplinary teams to plan, design, testand launch.</p>
+      <p>I speak native English, fluent Cantonese, Hakka and Japanese (N2, July 2021).</p>
+      <p>Outside of "work", I like to do lots of walking, bicycling and photography 📷</p>
+      <p>Contact: katy24@gmail.com</p>
+  </div>
+</div>

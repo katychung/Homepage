@@ -1,11 +1,43 @@
-body{
-	line-height: 1.9;
+/* General Body Styles */
+body {
+    line-height: 1.9;
 }
 
-.content-wrapper{
-	max-width: 760px;
-	margin: auto;
+/* Link Styles */
+a {
+    color: #212529;
+    text-decoration: none;
 }
 
+a:hover {
+    color: #D94F23;
+    text-decoration: none;
+}
 
+/* Navbar Link Styles */
+.nav-link {
+    color: #212529;
+    text-decoration: none;
+}
 
+.nav-link:hover {
+    color: #D94F23;
+    text-decoration: none;
+}
+
+/* Content Wrapper Styles */
+.content-wrapper {
+    max-width: 760px;
+    margin: auto;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transition: box-shadow 0.4s ease;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* General Shadow Class */
+.shadow {
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+}
