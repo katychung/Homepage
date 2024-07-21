@@ -22,10 +22,9 @@ screens: assets/img/ga-screens.png
 <div class="row py-3">
     <div class="col-8">
       <p class="font-monospace">Overview</p>
-      <p>Vyond did a complete redesign of their B2B platform with the vision to be the video creation platform for business.</p>
-      <p>The goal of this project was to establish the information architecture of the redesign</p>
-      <p>This would provide a solid foundation to the design and development team to move forward with the beta release.</p>
-      <p class="fw-lighter">To comply with my non-disclosure agreement, I have omitted and obfuscated confidential information in this case study. All information in this case study is my own and does not necessarily reflect the views of the company.</p>
+      <p>Vyond did a complete redesign of their B2B platform with the vision to be <i>the</i> video creation platform for business.</p>
+      <p>The goal of this project was to redesign the app, <b>starting with defining its information architecture</b>. This step was crucial for laying a solid foundation to continue the redesign process and prepare for the beta release.</p>
+      <p class="fw-lighter">To comply with my non-disclosure agreement, I have omitted and obfuscated confidential information in this case study. All information presented is my own and does not necessarily reflect the company's views.</p>
     </div>
     <div class="col-4">
       <p class="font-monospace">Role</p>
@@ -43,24 +42,28 @@ screens: assets/img/ga-screens.png
 
 ### Background
 
-I joined Vyond in the Hong Kong office in the early days, 20-30 members, largely developers, 3 designers (expanded to 6), minimal process, at the precipice of product-market fit, rolling up the sleeves type work, to say the least — I learnt a lot about growth, teamwork and agile processes, and well, process itself as the company doubled in size each year, outgrowing 2 offices in the span of 4 short years that I worked there. 
+I joined Vyond in the Hong Kong office in the early days, 20-30 members, largely developers, 3 designers, minimal process, at the precipice of product-market fit, rolling up the sleeves type work, to say the least — I learnt a lot — product development, collaboration and agile processes, as well as process itself as the company doubled in size each year, outgrowing 2 offices in the span of the 4 years that I worked there. 
 
-Vyond's service consists of a couple of apps — the studio for making videos and the character creator. We were tasked with completely redesigning as we shifted away from legacy technology. A move that was highly risky but essential to thrive.
+Vyond's service consists of a couple of apps: 
+1. **the studio** - making animated videos using the premade assets (animated and static visuals, characters, text, sound effects etc)
+2. **the character creator** - customizable characters (body shape, hair style, facial features, clothes etc)
+
+We were tasked with completely redesigning as we shifted away from legacy technology. A move that was highly risky but essential to thrive.
 
 **Key Achievements**
 - **Implement design process.** This established structure to how we work, giving other teams greater visibility to the design team's work.
 - **Align designers with reusable patterns.** This helped to maintain a consistent user experience across the two apps as we were building them in parallel.
 - **Improving usability.** Running usability tests on a regular cadence helped us improve the usability continuously but also sharing short summary of findings with other departments helped build the user empathy.
 - **Creating a consistent browsing experience** (detailed below)
-- **Onboarding** new and existing users
+- **User onboarding.** new and existing users
 - **User test.** Plan, script and run countless user tests
-- **Established design processes.** When I joined, there was very little process in place, which was manageable initially, but as we grew, it had become increasingly necessary to ensure 
+- **Establishe design processes.** When I joined, there was very little process in place, which was manageable initially, but as we grew, it had become increasingly necessary to ensure 
 
 ---
 
 ### Process
 
-We went through the stages of the double diamond, from research, content auditing, modelling and developing the idea.
+We went through the stages of the double diamond — from research, content auditing, modelling and developing the pattern.
 
 <img src="/assets/img/double-diamond-ia.svg" class="rounded" alt="...">
 
@@ -68,9 +71,9 @@ We went through the stages of the double diamond, from research, content auditin
 
 ### Research & Diccovery
 
-We were running regular user testing sessions as we built up the beta. It really helped us to take some steps back when things didn't work out as expected. 
+We were running regular user testing sessions as we built up the beta. It really helped us reflect and take steps back when things didn't work out as expected. 
 
-Eventually, the user tests and the user interviews made it clear that there was a problem brewing.
+However, the task-based user tests and interviews made it clear that there was a problem brewing.
 
 ---
 
@@ -86,7 +89,7 @@ Quite late into the redesign of the platform, we ran into some problems:
 
 <mark>On top of the app's library of content, users create their own characters, import content and ask us to customize assets too.</mark>
 
-<img src="/assets/img/properties.png" class="rounded" alt="...">
+<img src="/assets/img/asset-overview.png" class="rounded" alt="...">
 <figcaption class="figure-caption text-center">Assets & Properties</figcaption>
 
 ---
@@ -102,7 +105,7 @@ I audited the content for our entire ecosystem and mapped out the relationships.
 
 ### Develop
 
-Taking the mapping and translating it into a repeatable design pattern. With this, I could share it with designers where we worked together to turn it into a tangible prototype.
+Taking the mapping and translating it into a repeatable design pattern. With this, I could share with designers to apply the pattern to existing nand new designs. I also worked closely with developers and explained how the pattern would work and to ensure transparency amongst the teams.
 
 The pattern took into account our **primary** (video creators) and **secondary** (managers and gatekeepers) **personas** as well as different **lifecycle stages** (beginners, intermediate and advanced).
 
@@ -112,7 +115,7 @@ The pattern took into account our **primary** (video creators) and **secondary**
 
 ---
 
-### Validating Designs & Results !
+### Validating Design
 
 With the updated designers, I once again ran user tests and this time, they were to able to successfully complete the tasks.
 

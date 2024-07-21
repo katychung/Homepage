@@ -23,7 +23,7 @@ screens: assets/img/gp-screens.png
     <div class="col-8">
       <p class="font-monospace">Overview</p>
       <p>Contractual project for a large Japanese entertainment (エンタメ) company in need of a mobile app to accompany their expanding number of stores throughout the country.</p>
-      <p class="fw-lighter">To comply with my non-disclosure agreement, I have omitted and obfuscated confidential information in this case study. All information in this case study is my own and does not necessarily reflect the views of the company.</p>
+      <p class="fw-lighter">To comply with my non-disclosure agreement, I have omitted and obfuscated confidential information in this case study. All information presented is my own and does not necessarily reflect the company's views.</p>
     </div>
     <div class="col-4">
       <p class="font-monospace">Role</p>
@@ -77,10 +77,7 @@ We held daily meetings with the stakeholders to understand their primary and sec
 ---
 
 ### Development & Design
-
-<div class="card">
-  <img src="{{ page.screens }}">
-</div>
+<img src="/assets/img/gp-screens.png" class="rounded" alt="wireframes">
 <figcaption class="figure-caption text-center">Obfucated wireframes: home, search results, and result details screens</figcaption>
 
 <p></p>
@@ -88,7 +85,6 @@ Wireframes, prototyping, client review. Complete design system for handoff.
 The final designs and specifiations were handed over to the external development team to complete the iOS and Android app.
 
 ### Reflection
-
 Most of my experience in startups and designing for B2B, working with a design agency on a B2C project was a refreshing change of pace and the challenges that I had to adapt to have helped me grow. 
 
 Agencies value the client relationship, speed, polish and presentation, while startsup are user-obsessed, hypothesis driven and iterative by nature.

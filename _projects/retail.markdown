@@ -21,8 +21,8 @@ teaser-image: assets/img/retail-teaser.png
     <div class="col-8">
       <p class="font-monospace">Overview</p>
       <p>Flow is a B2B data analytics platform for the retail industry.</p>
-      <p>The goal of this project was to shift its focus from corporate employees to frontline store staff by identifying problems and solutions that we could integrate into the existing platform.</p>
-      <p class="fw-lighter">To comply with my non-disclosure agreement, I have omitted and obfuscated confidential information in this case study. All information in this case study is my own and does not necessarily reflect the views of the company.</p>
+      <p>The goal of this project was to shift the focus <b>from corporate employees to frontline store staff</b>.</p>
+      <p class="fw-lighter">To comply with my non-disclosure agreement, I have omitted and obfuscated confidential information in this case study. All information presented is my own and does not necessarily reflect the company's views.</p>
     </div>
     <div class="col-4">
       <p class="font-monospace">Role</p>
@@ -42,24 +42,24 @@ teaser-image: assets/img/retail-teaser.png
 ### Background
 Flow is a data analytics platform for Japan's retail industry.
 
-I am the sole designer at the company working with the founder, lead engineer, sales, marketing and operations as well as offshore development members. I support design across every aspect of our business and am responsible for leading UX and UI across their web and mobile app.
+I am the sole designer at the company working directly with the founder, lead engineer, sales, marketing and operations as well as offshore development members. It is a small team and I support design across every aspect of our business and am responsible for leading UX and UI across their web and mobile app.
 
 **Key achievements**:
-- **Establish design process.** Adding structure helped the team focus better and gave greater visibility to other departments
-- **Create design system.** This helped bring consistency to design and development as well as providing a more consistent experience for end users.
-- **Improve usability.** Actively improve usability through the use of heuristics and best practices.
+- **Create design system.** There were a lot of inconsistencies across the web and mobile app. By creating a design system, we could deliver a higher quality product, faster.
+- **Improve usability.** Actively improve usability through heuristics and best practices. Improve accessibility via the design system by considering color contrast, 
+- **Integrate accesbility into components.** Integrating accessibility into the design system components (color, type, text, images, spacing...) alongside implementation guidelines.
 - **Creating prototypes.** Previously, prototypes were not used, instead the designer created static mockups which were handed-off to developers. With a prototype, we could first validate the designs as well as increase communication early on in the development process.
 
 ---
 
 ### Process
-It typically varies by project depending on complexity and timeline. For this particular project, I followed the double diamond process from research (generative), problem definition, ideation to delivery.
-<img src="/assets/img/double-diamond.svg" class="rounded" alt="...">
+For this project, I followed the double diamond process from generative research, problem definition, ideation to delivery.
+<img src="/assets/img/double-diamond.svg" class="rounded" alt="double diamond design process">
 
 ---
 
 ### Understanding the Problem
-Before I joined Flow, the platform was designed to deliver the store analytics without much thought about the user experience. Much of the service was driven by tech. 
+Before I joined Flow, the platform was designed to deliver the store analytics to corporate staff and store staff. However, it was done with little consideration about the user experience. Much of the service was driven by tech — connecting to various sources — pos, cameras, sensors, collecting the data and displaying that data on a dashboard and on to various reports.
 
 Moving forward with the platform, there was a need to take a few steps back, conduct some generative research by talking to the stores and to uncover insights to help us move forward in development with a user centred approach.
 
@@ -92,7 +92,7 @@ There was a necessary step to create a strategy that could direct us in the long
 ---
 
 ### Validating Designs
-We conducted user testing to check whether the new design solved their problems. As the design doesn't lend itself to task-based user testing, I opted for a more exploratory style of user test. I created a user test script with a scenario split into 3 sections, each section preceded with questions about the scenario and how they approach the matter.
+We conducted user testing to check whether the new design solved their problems. As the design did not lend itself to task-based user testing, I opted for a more exploratory style of user test. I created a user test script with a scenario split into 3 sections, each section preceded with questions about the scenario and how they approach the matter.
 
 During the sessions, we observed which parts of the new design resonated and which parts they seemed to not quite understand. We learnt that the initial setup process for the store dashboard was a little too time consuming and that it was easier to have some predefined starter templates. This would let them use the service right away while allowing them customize at their own pace.
 
