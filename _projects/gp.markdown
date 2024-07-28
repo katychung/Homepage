@@ -1,5 +1,5 @@
 ---
-layout: project_key
+layout: project
 title: "Connected Store Experience"
 date: 2022-08-01 00:00:00
 project-date: "May 2022 - August 2022"
@@ -21,14 +21,12 @@ screens: assets/img/gp-screens.png
 <!-- ### Overview -->
 <div class="row py-3">
     <div class="col-8">
-      <p class="font-monospace">Overview</p>
+      <h3>Overview</h3>
       <p>Contractual project for a large Japanese entertainment (エンタメ) company in need of a mobile app to accompany their expanding number of stores throughout the country.</p>
-      <p class="fw-lighter">To comply with my non-disclosure agreement, I have omitted and obfuscated confidential information in this case study. All information presented is my own and does not necessarily reflect the company's views.</p>
     </div>
     <div class="col-4">
       <p class="font-monospace">Role</p>
-      <p>UX Designer. Team - Goodpatch designers and two product managers. Daily meetings with the client and other external development teams.</p>
-      <span class="badge rounded-pill bg-dark">Personas</span>
+      <p>UX Designer. Team - Goodpatch designers and two product managers. Daily meetings with the client and external development teams.</p>
       <span class="badge rounded-pill bg-dark">Wreframes </span>
       <span class="badge rounded-pill bg-dark">Prototyping</span>
       <span class="badge rounded-pill bg-dark">Figma</span>
@@ -42,27 +40,26 @@ screens: assets/img/gp-screens.png
     </div>
 </div>
 
----
+<p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
 
 ### Background
-Goodpatch is a leading design agency in Japan. I was lucky enough to have gotten a chance to join them for this short contract project that they had with a Japanese entertainment (エンタメ) company who had some stringest requirements for a mobile app but needed some help with the design. The company has a strong interanational presence and a recognizeable brand and lots of intellectual property.
+Goodpatch is a leading design agency in Japan. I had the opportunity to join them for this short contract project that they had with a Japanese entertainment (エンタメ) company who wanted a mobile app for their new stores. Goodpatch was tasked with providing the design direction and delivering specifications to the outsourced development company.
 
-The development was outsourced to a seperate development company. Communications were daily, meetings were long.
+Working entirely with Japanese team members for the first time was a valuable challenge in terms of culture and language differences 🙌🏼.
 
-It was my first time to work entirely with Japanese members and so it was a great challenge in terms of culture and language difference 🙌🏼 
-
-
----
+<p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
 
 ### Process
-As the client had a defined scope, timeline and expected specific deliverables, we had to first take their requirements and to turn them into something tangible for initial conversations. Within a short time frame, we:
+As the client had a defined scope, short timeline and expected specific deliverables. We have to move quickly. We began by taking their requirements and creating rough wireframes for initial discussions. The process included:
 
-- **brainstorm assumptions and questions.** This helped to clarify expectations and to get on the same page.
-- **personas creation.** This helped to guide design decisions around the end user
-- **formulate a strategy.** This helped everyone see the bigger picture and to visualize the outcome.
-- **created high level wireframes in Figma.** This helped us get quick feedback from the client.
+- **Understand the requirements.** As project timeline was short, I read through the documentation and noted down anything that I raised questions for our next meeting.
+- **Brainstorming assumptions and questions.** Clarify expectations and align our understanding.
+- **Create personas.** Further elaborated on by the client. This helped to guide design decisions.
+- **Formulate a strategy.** Align Goodpatch and the client on the purpose of the app and its scope.
+- **Created wireframes in Figma.** This helped us get quick feedback from the client before moving to high fidelity work.
+- **Create high fidelity prototype** Clickable prototype with detailed user interactions helped bring the project close to the finish line.
 
----
+<p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
 
 ### Planning
 
@@ -74,19 +71,19 @@ We started with wireframing at a very high level the key flows of the app. Havin
 
 We held daily meetings with the stakeholders to understand their primary and secondary target users, defined the underlying concept, worked within their brand guidelines and presented various directions and handed off the specifications to the external dev teams to deliver the final product.
 
----
+<p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
 
 ### Development & Design
+
 <img src="/assets/img/gp-screens.png" class="rounded" alt="wireframes">
 <figcaption class="figure-caption text-center">Obfucated wireframes: home, search results, and result details screens</figcaption>
 
 <p></p>
-Wireframes, prototyping, client review. Complete design system for handoff.
-The final designs and specifiations were handed over to the external development team to complete the iOS and Android app.
+The final designs and specifications were handed over to the external development team to complete the iOS and Android app.
+
+<p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
 
 ### Reflection
-Most of my experience in startups and designing for B2B, working with a design agency on a B2C project was a refreshing change of pace and the challenges that I had to adapt to have helped me grow. 
+Most of my experience in startups and designing for B2B so working with a design agency on a B2C project was a refreshing change of pace. Adapting to the agency way of working was a interesting challenge and helped me gain perspective on the different types of working styles and projects out there.
 
-Agencies value the client relationship, speed, polish and presentation, while startsup are user-obsessed, hypothesis driven and iterative by nature.
-
-♡
+Agencies value the client relationship, speed, polish and presentation, while startsup are user-obsessed, hypothesis driven and iterative by nature. 

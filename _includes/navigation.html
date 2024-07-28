@@ -1,22 +1,27 @@
-<nav class="navbar navbar-expand-sm" aria-label="Third navbar example">
-  <a class="navbar-brand" href="/">KC</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarsExample03">
-    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-      <li class="nav-item">
-        <a class="nav-link" href="/" {% if page.url == "/" %}style="color: #D94F23;"{% endif %}>Home</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="/projects.html" {% if page.url == "/projects.html" %}style="color: #D94F23;"{% endif %}>Projects</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="/photos.html" {% if page.url == "/photos.html" %}style="color: #D94F23;"{% endif %}>Photography</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/about.html" {% if page.url == "/about.html" %}style="color: #D94F23;"{% endif %}>About</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+
+    <nav class="navbar navbar-expand-sm custom-navbar-bg fixed-top" aria-label="Navbar"><div class="container">
+    <a class="navbar-brand" href="/">KC</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/" {% if page.url == "/" %}style="color: var(--primary-color); text-decoration: underline;"{% endif %}>Home</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="/projects.html" {% if page.url == "/projects.html" %}style="color: #var(--primary-color); text-decoration: underline;"{% endif %}>Projects</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="/photos.html" {% if page.url == "/photos.html" %}style="color: var(--primary-color); text-decoration: underline;"{% endif %}>Photography</a>
+          </li>      
+          <li class="nav-item">
+            <a class="nav-link" href="/writings.html" {% if page.url == "/photos.html" %}style="color: var(--primary-color); text-decoration: underline;"{% endif %}>Reading & Writing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html" {% if page.url == "/about.html" %}style="color: var(--primary-color); text-decoration: underline;"{% endif %}>About</a>
+          </li>
+        </ul>
+      </div>  
+    </div>
+    </nav>

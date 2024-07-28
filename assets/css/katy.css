@@ -1,34 +1,119 @@
+:root {
+    --primary-color: #212529;  /* black */
+    --secondary-color: #D94F23;  /* orange */
+    --sticky-1: #FFD966;
+    --sticky-2: #80CAFF;
+    --sticky-3: #85E0A3;
+    --sticky-4: #FFC470;
+}
+    .card-img-top-fit {
+      width: 100%;
+      height: 200px; /* Adjust as needed */
+      object-fit: contain;
+      background-color: #f6f6f6; /* Letterbox color */
+    }
+
+.navbar.custom-navbar-bg {
+    border-bottom: 1px solid #f2f2f2;
+    background-color: #f6f6f6;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}
+
 /* General Body Styles */
 body {
     line-height: 1.9;
 }
 
+.hover-image {
+    position: absolute;
+    cursor: zoom-in;
+    display: none;
+    width: 200px; /* Adjust the size as needed */
+    height: auto;
+    pointer-events: none; /* Prevent the image from interfering with cursor actions */
+    z-index: 1000; /* Ensure the image appears above other elements */
+    border-radius:5px;
+}
+
+.navbar-toggler{
+	border: 0;
+
+}
+.navbar-toggler .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(33,37,41,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 /* Link Styles */
+.highlight1{
+    color: var(--primary-color);
+    background-color: var(--sticky-1);
+    text-decoration: none;
+}
+
+.highlight2{
+    color: var(--primary-color);
+    background-color: var(--sticky-2);
+    text-decoration: none;
+}
+
+.highlight3{
+    color: var(--primary-color);
+    background-color: var(--sticky-3);
+    text-decoration: none;
+}
+
+.highlight4{
+    color: var(--primary-color);
+    background-color: var(--sticky-4);
+    text-decoration: none;
+}
+
+.highlight1:hover, .highlight2:hover, .highlight3:hover, .highlight4:hover {
+    color: #ffffff;
+    text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px, #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.highlight4:hover {
+    cursor: default;
+}
+
 a {
-    color: #212529;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
 a:hover {
-    color: #D94F23;
-    text-decoration: none;
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 /* Navbar Link Styles */
 .nav-link {
-    color: #212529;
+    color: var(--primary-color);
     text-decoration: none;
+    background-color: hsla(57, 0%, 100%, 0);
 }
 
 .nav-link:hover {
-    color: #D94F23;
-    text-decoration: none;
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 /* Content Wrapper Styles */
 .content-wrapper {
     max-width: 760px;
-    margin: auto;
+/*    margin: 0 auto;*/
+    --bs-gutter-x: 1.5rem;
+--bs-gutter-y: 0;
+width: 100%;
+padding-right: calc(var(--bs-gutter-x) * .5);
+padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: 100px; /* Adjust based on the height of your navbar */
+
+}
 }
 
 /* Card Hover Effect */

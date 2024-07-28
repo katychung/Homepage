@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "Notes on Thinking Fast & Slow"
+title:  "Book Notes: Thinking Fast & Slow"
 date:   2024-07-11 12:00:00 +0900
-image: assets/photos/2-1.jpg
+image: /assets/books/thinking-fast-slow.jpg
+tags: book
 ---
 
+<img src="{{ page.image }}" alt="title cover">
 
 WYSIATI - What you see is all there is.
 

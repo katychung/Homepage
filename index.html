@@ -1,16 +1,23 @@
 ---
 layout: default
 ---
-<div class="row py-5 my-5">
-    <h1>ハロー👋🏼 I am Katy,</h1>
-    <!-- <p class="fs-5 lh-1">Tokyo-based experience designer.</p> -->
-    <p class="fs-5 lh-1">British-born, multi-cultured, polylingual, Tokyo-based experience designer.</p>
-    <p class="fs-5 lh-1">Currently supporting a DX project for the retail industry.</p>
-    <p class="fs-5 lh-1">Previously Goodpatch, Oracle, Vyond, Ribose and OPX Studio.</p>
-</div>
 
+<div class="row py-5 my-5">
+    <div class="col-md-12">
+        <h1>ハロー👋🏼 I am <a href="about.html" class="highlight1">Katy</a></h1>
+        <h2 class="pb-5">I like to 
+            <a href="projects.html" class="highlight2">design</a>, 
+            <a href="photos.html" class="highlight3">take photos</a>, 
+            <a href="#" class="highlight4" data-image="assets/img/bicycle.jpg">bicycle</a>  
+            <a href="#" class="highlight4" data-image="assets/img/surly.jpg">!</a></h2>
+        <img id="hoverImage" class="hover-image" src="" alt="Image Preview">
+        <p class="m-0">British-born, multi-cultured, polylingual, Tokyo-based experience designer.</p>
+        <p class="m-0">Currently supporting a DX project for the retail industry.</p>
+        <p class="m-0">Previously Goodpatch, Oracle, Vyond, Ribose and OPX Studio.</p>
+    </div>
+</div>
 <div class="row py-4">
-    <p class="fs-6 font-monospace">Past Projects・過去のプロジェクト</p>{% for project in site.projects %}
+    <p class="fs-6 font-monospace"><b>Past Projects・過去のプロジェクト</b></p>{% for project in site.projects %}
     <div class="col-md-6 my-2">
       <div class="card"><a href="{{ site.url }}{{ site.baseurl }}{{ project.url }}">
         <img src="{{ project.teaser-image }}" class="card-img-top" alt="..."></a>
@@ -22,33 +29,28 @@ layout: default
     </div>{% endfor %}
 </div>
 
-<div class="row py-5">
-  <p class="fs-6 font-monospace">Photography・フォトグラフィー</p>
-  <div class="col-sm-3 mb-3 mb-sm-0">
-    <div class="card shadow">
-      <img src="assets/photos/2-1.jpg" class="rounded" alt="...">
-    </div>
-  </div>
-  <div class="col-sm-3 mb-3 mb-sm-0">
-    <div class="card shadow">
-      <img src="assets/photos/2-2.jpg" class="rounded" alt="...">
-    </div>
-  </div>
-  <div class="col-sm-3 mb-3 mb-sm-0">
-    <div class="card shadow">
-      <img src="assets/photos/2-3.jpg" class="rounded" alt="...">
-    </div>
-  </div>
-  <div class="col-sm-3 mb-3 mb-sm-0">
-    <div class="card shadow">
-      <img src="assets/photos/2-4.jpg" class="rounded" alt="...">
-    </div>
-  </div>
-</div>
 
-<div class="row py-5">
-    <p class="fs-6 font-monospace">Writings</p>
-      {% for post in site.posts %}
-          <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-      {% endfor %}
-</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.highlight4');
+        const hoverImage = document.getElementById('hoverImage');
+
+        links.forEach(link => {
+            link.addEventListener('mouseover', function(event) {
+                const imageUrl = link.getAttribute('data-image');
+                hoverImage.src = imageUrl;
+                hoverImage.style.display = 'block';
+            });
+
+            link.addEventListener('mousemove', function(event) {
+                hoverImage.style.left = event.pageX + 10 + 'px'; // Adjust 10px offset as needed
+                hoverImage.style.top = event.pageY + 10 + 'px'; // Adjust 10px offset as needed
+            });
+
+            link.addEventListener('mouseout', function() {
+                hoverImage.style.display = 'none';
+            });
+        });
+    });
+</script>
