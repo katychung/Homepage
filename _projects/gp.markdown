@@ -67,6 +67,8 @@ Alongside the other Goodpatch team members, we interpreted the requirements, def
 
 We started with wireframing at a very high level the key flows of the app. Having a tangible wireframe for those early conversations was really helpful in getting the client's to feel more comfortable in sharing their thoughts and getting the project moving forward.
 
+<p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
+
 ### Collaboration
 
 We held daily meetings with the stakeholders to understand their primary and secondary target users, defined the underlying concept, worked within their brand guidelines and presented various directions and handed off the specifications to the external dev teams to deliver the final product.
