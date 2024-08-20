@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Prototyping to Learn"
+title:  "Red Herrings"
 date:   2024-08-21 11:57:50 +0900
 # image: /assets/books/cover.jpg
 description: Red Herrings
