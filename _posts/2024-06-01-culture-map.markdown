@@ -53,3 +53,5 @@ tags: book
 **Scheduling - Linear Time (1) <-> Flexible Time(10)**
 - Japan - 1
 - Self - 2
+
+..
