@@ -19,7 +19,7 @@ tags: [Research, Strategy, Layout, Usability, Prototyping]
 <div class="row py-3">
     <div class="col-8">
       <h2>Background</h2>
-      <p>Flow is a B2B SaaS data analytics platform aimed at retail stores in Japan. The platform connects to store data sources — the POS, cameras, traffic sensors, collecting and displaying data on a dashboard and via various reports.</p>
+      <p>Flow is a B2B SaaS data analytics platform aimed at retailer in Japan. The platform connects to store data sources — the POS, cameras, traffic sensors, collecting and displaying data on a dashboard and via various reports.</p>
       <p>I am the sole designer at the company working directly with the founder, lead engineer, customer success as well as offshore development members. It is a small team and I support design across the web and mobile app.</p>
     </div>
     <div class="col-4">
@@ -39,12 +39,12 @@ tags: [Research, Strategy, Layout, Usability, Prototyping]
 ### Challenge
 The combination of Japan's declining population, an aging society, and the rise of e-commerce is forcing brick-and-mortar retail stores to continuously evolve their customer experience in order to attract and retain customers. 
 
-Similarly, despite **low churn, growth on the platform has stagnated**. Key design issues like confusing data visualizations, poor information architecture and the lack of a user onboarding flow.
+Moreover, the company's growth has stagnated, which is further compounded by the lack of a clear value proposition. Key design issues, such as confusing data visualizations, poor information architecture, and the absence of a user onboarding flow, also hinder the service's potential.
 
 ### Goals
 - Define a strategy based on the company vision, business goals and user needs.
 - Shift focus to empowering frontline store staff with data-informed insights
-- ncrease transparency and knowledge sharing among stores
+- Increase transparency and knowledge sharing among stores
 - Improve design language, information architecture, the data visualisations for easy comprehension and overall usability 
 
 ### Purpose
@@ -58,11 +58,9 @@ Empowering frontline store staff with data-informed insights so that they can im
 <p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
 
 
-### Business & UX Audit
+### UX Audit
 
 <img src="/assets/img/retail-existing.png" class="rounded" alt="existing ui">
-
-To understand the business and where it stands, I did a competitor benchmark and analyzed the strengths, weaknesses, opportunities and threats. The stagnent store and user growth was the inpetus while the lack of a clear value propposition and product differentiation posed a major weakness and threat to itself.
 
 <p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
 
