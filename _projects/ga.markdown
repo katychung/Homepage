@@ -6,7 +6,7 @@ project-date: "2014 - 2018"
 description: "Vyond is a leading DIY animated video SAAS platform for B2B."
 teaser-image: /assets/img/ga-teaser.png
 screens: /assets/img/ga-screens.png
-tags: [Information architecture, Interaction Patterns, Team Alignment]
+tags: [Information architecture, Interaction Patterns]
 ---
 
 <p></p>
