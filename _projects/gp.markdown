@@ -6,6 +6,7 @@ project-date: "May 2022 - August 2022"
 description: "Leading Japan entertainment company connecting customers to stores."
 teaser-image: assets/img/gp-teaser.png
 screens: assets/img/gp-screens.png
+tags: [Wireframes, Prototypes, Information architecture]
 ---
 
 # {{ page.title }}
@@ -27,14 +28,9 @@ screens: assets/img/gp-screens.png
     <div class="col-4">
       <p class="font-monospace">Role</p>
       <p>UX Designer. Team - Goodpatch designers and two product managers. Daily meetings with the client and external development teams.</p>
-      <span class="badge rounded-pill bg-dark">Wreframes </span>
-      <span class="badge rounded-pill bg-dark">Prototyping</span>
-      <span class="badge rounded-pill bg-dark">Figma</span>
-      <span class="badge rounded-pill bg-dark">Figjam</span>
-      <span class="badge rounded-pill bg-dark">Miro</span>
-      <span class="badge rounded-pill bg-dark">MS Teams</span>
-      <span class="badge rounded-pill bg-dark">Slack</span>
-      <span class="badge rounded-pill bg-dark">Discord</span>
+      {% for tag in page.tags %}
+      <span class="badge rounded-pill bg-dark">{{ tag }}</span>
+      {% endfor %}
       <p></p>
       <p>{{ page.project-date }}</p>
     </div>
@@ -86,6 +82,6 @@ The final designs and specifications were handed over to the external developmen
 <p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
 
 ### Reflection
-Most of my experience in startups and designing for B2B so working with a design agency on a B2C project was a refreshing change of pace. Adapting to the agency way of working was a interesting challenge and helped me gain perspective on the different types of working styles and projects out there.
+Most of my experience in startups and designing for B2B so working with a design agency on a B2C project was a nice change of pace. Adapting to the agency way of working was a interesting challenge and helped me gain perspective on the different types of working styles and projects out there.
 
 Agencies value the client relationship, speed, polish and presentation, while startsup are user-obsessed, hypothesis driven and iterative by nature. 

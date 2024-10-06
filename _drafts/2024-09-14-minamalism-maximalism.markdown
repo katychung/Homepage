@@ -13,6 +13,11 @@ Culture
 - Collectivist
 - Not causing trouble for others
 
-Which explains
-- More information is needed to increase certainty, confidence
+Trends
+- Ageing populating
+- Low birth rate
+
+Needs
+- More info upfront to increase confidence
+- Social
 

@@ -6,6 +6,7 @@ project-date: "2014 - 2018"
 description: "Vyond is a leading DIY animated video SAAS platform for B2B."
 teaser-image: /assets/img/ga-teaser.png
 screens: /assets/img/ga-screens.png
+tags: [Information architecture, Interaction Patterns, Team Alignment]
 ---
 
 <p></p>
@@ -34,10 +35,9 @@ screens: /assets/img/ga-screens.png
     <div class="col-4">
       <p class="font-monospace">Role</p>
       <p>Senior UX Designer</p>
-      <span class="badge rounded-pill bg-dark">Information Architecture</span>
-      <span class="badge rounded-pill bg-dark">Interaction Patterns</span>
-      <span class="badge rounded-pill bg-dark">High Fidelity Prototype</span>
-      <span class="badge rounded-pill bg-dark">Test & Launch</span>
+      {% for tag in page.tags %}
+      <span class="badge rounded-pill bg-dark">{{ tag }}</span>
+      {% endfor %}
       <p></p>
       <p>{{ page.project-date }}</p>
     </div>
@@ -137,7 +137,7 @@ Here is the end result that I screen grabbed from the production site; the desig
 
 The most challenging part was persuading stakeholders that it was necessary to go back and work on something foundational so late in the game. 
 
-Designers and developers were also needing some convincing, as it meant giving up a bit of creative freedom, and having to adopt something quite rigid and sometimes didn't necessarily make sense.
+Designers and developers were also needing convincing, as it meant giving up a bit of creative freedom and having to work with some constaints. 
 
-The constraints made by the pattern resulted in tough conversations within the design team but ultimately made the work stronger.  
+The constraints made by the pattern resulted in tough conversations within the design team but ultimately made the work stronger as it gave us more time to consider more important parts of the design.
 

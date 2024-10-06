@@ -14,6 +14,9 @@ title: "Projects"
               <div class="card-body">
                 <h5 class="card-title">{{ project.title }} 🔒</h5>
                 <p class="card-text text-truncate">{{ project.description }}</p>
+                {% for tag in project.tags %}
+                <span class="badge rounded-pill bg-dark">{{ tag }}</span>
+                {% endfor %}
               </div>
             </div>
         </div>{% endfor %}

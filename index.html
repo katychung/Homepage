@@ -12,8 +12,11 @@ title: "Home"
             <a href="#" class="highlight4" data-image="assets/img/bicycle.jpg">bicycle</a>  
             <a href="#" class="highlight4" data-image="assets/img/surly.jpg">!</a></h2>
         <img id="hoverImage" class="hover-image" src="" alt="Image Preview">
-        <p class="m-0">British-born, multi-cultured, polylingual, Tokyo-based experience designer.</p>
-        <p class="m-0">Currently supporting a DX project for the retail industry.</p>
+        <p class="m-0">British-born, Tokyo-based, multi-cultured, polylingual, experience designer.</p>
+<!--         <p class="m-0">Creating measuring results through a user focused approach.</p>
+        <p class="m-0">Balancing customer needs and business goals.</p> -->
+        <!-- <p class="m-0">British-born, multi-cultured, polylingual, Tokyo-based experience designer.</p> -->
+        <p class="m-0">Currently leading a DX project for the retail industry.</p>
         <p class="m-0">Previously Goodpatch, Oracle, Vyond, Ribose and OPX Studio.</p>
     </div>
 </div>
@@ -25,12 +28,13 @@ title: "Home"
           <div class="card-body">
             <h5 class="card-title">{{ project.title }} 🔒</h5>
             <p class="card-text text-truncate">{{ project.description }}</p>
+                {% for tag in project.tags %}
+                <span class="badge rounded-pill bg-dark">{{ tag }}</span>
+                {% endfor %}
           </div>
         </div>
     </div>{% endfor %}
 </div>
-
-
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
