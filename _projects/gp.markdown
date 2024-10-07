@@ -16,7 +16,7 @@ tags: [Wireframes, Prototypes, Information architecture]
     <p>{{ page.description }}</p>
     <div class="row">
       <div class="col">
-        <div class="card"><img src="/assets/img/gp-teaser.png" class="rounded" alt="..."></div>
+        <div class="card"><img src="/assets/img/gp-teaser.png" class="img-fluid rounded" alt="..."></div>
         <figcaption class="figure-caption text-center">Wireframe</figcaption>
       </div>
     </div>
@@ -90,7 +90,7 @@ tags: [Wireframes, Prototypes, Information architecture]
 <div class="full-width-section" style="background-color: #fff; padding: 2rem 0;">
   <div class="container content-wrapper">
     <h3>Development & Design</h3>
-    <img src="/assets/img/gp-screens.png" class="rounded" alt="wireframes">
+    <img src="/assets/img/gp-screens.png" class="img-fluid rounded" alt="wireframes">
     <figcaption class="figure-caption text-center">Obfuscated wireframes: home, search results, and result details screens</figcaption>
     <p>The final designs and specifications were handed over to the external development team to complete the iOS and Android app.</p>
   </div>

@@ -14,7 +14,7 @@ tags: [Information architecture, Interaction Patterns]
     <h1>{{ page.title }}</h1>
     <p>{{ page.description }}</p>
       <div class="card">
-        <img src="/assets/img/ga-screens.png" class="rounded" alt="Editing Props in Vyond Studio">
+        <img src="/assets/img/ga-screens.png" class="img-fluid rounded" alt="Editing Props in Vyond Studio">
       </div>
       <figcaption class="figure-caption text-center">Editing Props in Vyond Studio</figcaption>
     </div>
@@ -65,7 +65,7 @@ tags: [Information architecture, Interaction Patterns]
     <div class="container content-wrapper">
       <h3>Process</h3>
       <p>We followed the Double Diamond approach, progressing through stages like research, content auditing, modeling, and creating a cohesive interaction pattern.</p>
-      <img src="/assets/img/double-diamond-ia.svg" class="rounded" alt="Double Diamond Process">
+      <img src="/assets/img/double-diamond-ia.svg" class="img-fluid rounded" alt="Double Diamond Process">
     </div>
   </div>
 
@@ -88,7 +88,7 @@ tags: [Information architecture, Interaction Patterns]
         <li>Low cohesion between content panels made it challenging to navigate the app’s extensive library of assets.</li>
       </ol>
       <p>Vyond has a large library of assets, each with many properties. This complexity can add significant cognitive load for users, especially with additional user-generated and customized content.</p>
-      <img src="/assets/img/asset-overview.png" class="rounded" alt="Assets & Properties">
+      <img src="/assets/img/asset-overview.png" class="img-fluid rounded" alt="Assets & Properties">
       <figcaption class="figure-caption text-center">Assets & Properties</figcaption>
     </div>
   </div>
@@ -98,7 +98,7 @@ tags: [Information architecture, Interaction Patterns]
     <div class="container content-wrapper">
       <h3>Content Audit</h3>
       <p>I conducted a comprehensive content audit, mapping relationships to visualize connections and identify gaps within the ecosystem.</p>
-      <img src="/assets/img/properties.png" class="rounded" alt="Content Audit">
+      <img src="/assets/img/properties.png" class="img-fluid rounded" alt="Content Audit">
       <figcaption class="figure-caption text-center">A small snippet of the content audit!</figcaption>
     </div>
   </div>
@@ -114,7 +114,7 @@ tags: [Information architecture, Interaction Patterns]
         <li><strong>Secondary:</strong> Managers (gatekeepers)</li>
         <li><strong>Lifecycle stages:</strong> Beginners, intermediate, and advanced users</li>
       </ul>
-      <img src="/assets/img/journey.png" class="rounded" alt="Interaction Design Pattern">
+      <img src="/assets/img/journey.png" class="img-fluid rounded" alt="Interaction Design Pattern">
       <figcaption class="figure-caption text-center">Interaction Design Pattern</figcaption>
     </div>
   </div>

@@ -9,12 +9,9 @@ tags: [Research, Strategy, Layout, Usability, Prototyping]
 
 <div class="full-width-section" style="background-color: #EDEFF2;">
   <div class="container content-wrapper">
-    <h1>Retail DX</h1>
-<p>{{ page.description }}</p>
-<!-- <div class="row">
-  <div class="col"> -->
+    <h1>Retail DX</h1><p>{{ page.description }}</p>
     <div class="card">
-      <img src="/assets/img/retail-screens.png" class="rounded" alt="Retail Screens">
+      <img src="/assets/img/retail-screens.png" class="img-fluid rounded " alt="Retail Screens">
     </div>
   </div>
 </div>
@@ -23,7 +20,7 @@ tags: [Research, Strategy, Layout, Usability, Prototyping]
   <div class="container content-wrapper">
     <div class="row">
       <div class="col-8">
-        <h2>Background</h2>
+        <h2>Backgound</h2>
         <p>Flow is a B2B SaaS data analytics platform aimed at retailers in Japan. The platform connects to store data sources — the POS, cameras, traffic sensors, collecting and displaying data on a dashboard and via various reports.</p>
         <p>I am the sole designer at the company working directly with the founder, lead engineer, customer success as well as offshore development members. It is a small team and I support design across the web and mobile app.</p>
       </div>
@@ -57,21 +54,21 @@ tags: [Research, Strategy, Layout, Usability, Prototyping]
 
 <div class="full-width-section" style="background-color: #fff;">
   <div class="container content-wrapper">
-    <img src="/assets/img/double-diamond.svg" class="rounded" alt="double diamond design process">
+    <img src="/assets/img/double-diamond.svg" class="img-fluid rounded" alt="double diamond design process">
   </div>
 </div>
 
 <div class="full-width-section" style="background-color: #EDEFF2;">
   <div class="container content-wrapper">
     <h2>UX Audit</h2>
-    <img src="/assets/img/retail-existing.png" class="rounded" alt="Existing UI">
+    <img src="/assets/img/retail-existing.png" class="img-fluid rounded" alt="Existing UI">
   </div>
 </div>
 
 <div class="full-width-section" style="background-color: #fff;">
   <div class="container content-wrapper">
     <h2>Research, Synthesis, and Findings</h2>
-    <img src="/assets/img/interviews.png" class="rounded" alt="Repository of User Interviews">
+    <img src="/assets/img/interviews.png" class="img-fluid rounded" alt="Repository of User Interviews">
     <p>Interviews with 25+ store managers from 6 different companies. Over those interviews, we got to understand their job role, their daily tasks, challenges, and how they use data.</p>
     <p><b>Findings in a nutshell</b>: low data literacy, high staff turnover, low customer service skills impacting sales, no knowledge transfer, and a lack of communication and information sharing among stores.</p>
   </div>
@@ -87,8 +84,8 @@ tags: [Research, Strategy, Layout, Usability, Prototyping]
 <div class="full-width-section" style="background-color: #fff;">
   <div class="container content-wrapper">
     <h2>Layout & Hierarchy</h2>
-    <img src="/assets/img/retail-visualh.png" class="rounded" alt="Hierarchy">
-    <img src="/assets/img/retail-layout.png" class="rounded" alt="Layout">
+    <img src="/assets/img/retail-visualh.png" class="img-fluid rounded" alt="Hierarchy">
+    <img src="/assets/img/retail-layout.png" class="img-fluid rounded" alt="Layout">
     <ul>
       <li>Information re-prioritized based on behavioural data and user feedback.</li>
       <li>Added visual hierarchy to communicate the priority of the information shown.</li>
