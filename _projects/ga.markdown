@@ -9,135 +9,132 @@ screens: /assets/img/ga-screens.png
 tags: [Information architecture, Interaction Patterns]
 ---
 
-<p></p>
-
-# {{ page.title }}
-{{ page.description }}
-
-<div class="row">
-  <div class="col">
-    <div class="card"><img src="{{ page.screens }}" class="rounded" alt="..."></div>
-    <figcaption class="figure-caption text-center">Editing Props in Vyond Studio</figcaption>
+<div class="full-width-section" style="background-color: #fff;">
+  <div class="container content-wrapper">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description }}</p>
+      <div class="card">
+        <img src="/assets/img/ga-screens.png" class="rounded" alt="Editing Props in Vyond Studio">
+      </div>
+      <figcaption class="figure-caption text-center">Editing Props in Vyond Studio</figcaption>
+    </div>
   </div>
-</div>
 
-<div class="row py-3">
-    <div class="col-8">
-      <h3>Overview</h3>
-      <p>The goal of this project was to redesign the app by first defining the information architecture. This was a key step to ensure we had a strong foundation before we could move forward.</p>
-      <p>The redesign was driven by sunsetting legacy technology; by changing the underlying framework, new possibilities opened up.</p>
-      <p>Vyond's service consists of 2 apps: </p>
+  <!-- Overview Section -->
+  <div class="full-width-section" style="background-color: #EDEFF2; padding: 2rem 0;">
+    <div class="container content-wrapper">
+      <div class="row py-3">
+        <div class="col-8">
+          <h3>Overview</h3>
+          <p>The goal of this project was to redesign the app by first defining the information architecture. This was a key step to ensure we had a strong foundation before we could move forward.</p>
+          <p>The redesign was driven by sunsetting legacy technology; by changing the underlying framework, new possibilities opened up.</p>
+          <p>Vyond's service consists of two apps:</p>
+          <ol>
+            <li><strong>The Studio</strong> – for creating animated videos</li>
+            <li><strong>The Character Creator</strong> – for creating customizable characters</li>
+          </ol>
+        </div>
+        <div class="col-4">
+          <p class="font-monospace">Role</p>
+          <p>Senior UX Designer</p>
+          <span class="badge rounded-pill bg-dark">Information architecture</span>
+          <span class="badge rounded-pill bg-dark">Interaction Patterns</span>
+          <p>2014 - 2018</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Section -->
+  <div class="full-width-section" style="background-color: #fff; padding: 2rem 0;">
+    <div class="container content-wrapper">
+      <h3>Background</h3>
+      <p>I joined Vyond in the Hong Kong office in the early days, with 20-30 members, largely developers, and 3 designers. It was a “roll up your sleeves” environment at the brink of product-market fit. I regularly collaborated with colleagues in Taiwan and San Francisco.</p>
+      <p>Throughout this time, I learned a lot about product development, agile processes, and the importance of structured workflows as the company doubled in size each year. Some key achievements include:</p>
+      <ul>
+        <li><strong>Design process:</strong> The design team doubled, but initially lacked structured processes, which caused inefficiencies. Establishing a design process streamlined workflows and improved collaboration with other teams.</li>
+        <li><strong>Improving usability:</strong> Regular usability testing helped us identify and address complex usability issues, improving user satisfaction. Sharing findings with other departments helped build user empathy.</li>
+        <li><strong>User onboarding:</strong> Identifying crucial steps for new users helped reduce the app’s learning curve, leading to lower subscription churn.</li>
+        <li><strong>Design consistency:</strong> Implementing reusable interaction patterns ensured a cohesive user experience across both apps and improved the efficiency of design and development teams.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Process Section -->
+  <div class="full-width-section" style="background-color: #EDEFF2; padding: 2rem 0;">
+    <div class="container content-wrapper">
+      <h3>Process</h3>
+      <p>We followed the Double Diamond approach, progressing through stages like research, content auditing, modeling, and creating a cohesive interaction pattern.</p>
+      <img src="/assets/img/double-diamond-ia.svg" class="rounded" alt="Double Diamond Process">
+    </div>
+  </div>
+
+  <!-- Research & Discovery Section -->
+  <div class="full-width-section" style="background-color: #fff; padding: 2rem 0;">
+    <div class="container content-wrapper">
+      <h3>Research & Discovery</h3>
+      <p>Through regular user interviews and tests, we identified significant navigation pain points. Minor adjustments weren’t sufficient to resolve the issues, so a broader redesign was needed.</p>
+    </div>
+  </div>
+
+  <!-- Defining the Problem Section -->
+  <div class="full-width-section" style="background-color: #EDEFF2; padding: 2rem 0;">
+    <div class="container content-wrapper">
+      <h3>Defining the Problem</h3>
+      <p>Late in the redesign, we encountered several challenges:</p>
       <ol>
-        <li><b>the studio</b> - for creating animated videos</li>
-        <li><b>the character creator</b> - for creating customizable characters</li>
+        <li>With a growing design team, members were adding features without considering the overall user experience, hindering scalability.</li>
+        <li>The app’s navigation lacked consistency, making it difficult for users to find options.</li>
+        <li>Low cohesion between content panels made it challenging to navigate the app’s extensive library of assets.</li>
       </ol>
+      <p>Vyond has a large library of assets, each with many properties. This complexity can add significant cognitive load for users, especially with additional user-generated and customized content.</p>
+      <img src="/assets/img/asset-overview.png" class="rounded" alt="Assets & Properties">
+      <figcaption class="figure-caption text-center">Assets & Properties</figcaption>
     </div>
-    <div class="col-4">
-      <p class="font-monospace">Role</p>
-      <p>Senior UX Designer</p>
-      {% for tag in page.tags %}
-      <span class="badge rounded-pill bg-dark">{{ tag }}</span>
-      {% endfor %}
-      <p></p>
-      <p>{{ page.project-date }}</p>
+  </div>
+
+  <!-- Content Audit Section -->
+  <div class="full-width-section" style="background-color: #fff; padding: 2rem 0;">
+    <div class="container content-wrapper">
+      <h3>Content Audit</h3>
+      <p>I conducted a comprehensive content audit, mapping relationships to visualize connections and identify gaps within the ecosystem.</p>
+      <img src="/assets/img/properties.png" class="rounded" alt="Content Audit">
+      <figcaption class="figure-caption text-center">A small snippet of the content audit!</figcaption>
     </div>
-</div>
+  </div>
 
-<p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
+  <!-- Develop Section -->
+  <div class="full-width-section" style="background-color: #EDEFF2; padding: 2rem 0;">
+    <div class="container content-wrapper">
+      <h3>Develop</h3>
+      <p>We translated the content mapping into a repeatable design pattern. This allowed us to apply a consistent approach to both existing and new designs while maintaining transparency between design and development teams.</p>
+      <p>The pattern was designed to accommodate different user types:</p>
+      <ul>
+        <li><strong>Primary:</strong> Video creators</li>
+        <li><strong>Secondary:</strong> Managers (gatekeepers)</li>
+        <li><strong>Lifecycle stages:</strong> Beginners, intermediate, and advanced users</li>
+      </ul>
+      <img src="/assets/img/journey.png" class="rounded" alt="Interaction Design Pattern">
+      <figcaption class="figure-caption text-center">Interaction Design Pattern</figcaption>
+    </div>
+  </div>
 
-### Background
+  <!-- Validating Design Section -->
+  <div class="full-width-section" style="background-color: #fff; padding: 2rem 0;">
+    <div class="container content-wrapper">
+      <h3>Validating Design</h3>
+      <p>With the updated pattern, we conducted further user tests, which showed improved task completion rates. While it required some trial and error, the pattern proved to be effective overall.</p>
+      <p>Below is a short video clip (26 secs) showing the design pattern in action, demonstrating how users browse, apply, save, and reuse colors.</p>
+      <div style="padding:62.12% 0 0 0;position:relative;">
+        <iframe src="https://player.vimeo.com/video/676490224?h=a49b27c683&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Color Properties"></iframe>
+      </div>
+    </div>
+  </div>
 
-I joined Vyond in the Hong Kong office in the early days, 20-30 members, largely developers, 3 designers, minimal process, at the precipice of product-market fit, rolling up the sleeves type work, to say the least. I regularly engaged with different departments and colleagues in Taiwan and San Francisco.
-
-I learnt a lot — product development, collaboration and agile processes, as well as process itself as the company doubled in size each year, outgrowing 2 offices in the span of the 4 years that I worked there.  Below are a some of the key achievements:
-
-- **Design process.** The design team doubled yet we lacked design process, causing inefficiencies and hurting transparency. Adding some structured design process streamlined workflows and improved collaboration with other teams.
-- **Improving usability.** As the app is quite complex, usability issues could easily impact user satisfaction. Running usability tests on a regular cadence helped us improve the usability continuously. I would also share concise summary of findings with other departments, this helped build the user empathy and lead to more user-centric decisions.
-- **User onboarding.** Recognizing the crucial steps for new users to succeed from their first login helped overcome the app's steep learning curve and decreased subscription churn.
-- **Ensure design consistency and cohesion.** By ensuring designers adhered to reusable interaction patterns, we were able to maintain a consistent user experience across both apps as well as allowing the design and development teams to work more efficiently and focus on higher-level design challenges.
-
-<p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
-
-### Process
-
-For this project, we went through the stages of the double diamond — from research, content auditing, modelling and developing the pattern.
-
-<img src="/assets/img/double-diamond-ia.svg" class="rounded" alt="...">
-
-<p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
-
-
-### Research & Discovery
-
-As we were conducting regular user interviews and user tests, it became clear that there was a problem brewing and it meant significant rework. 
-
-During these sessions, I identified several pain points and areas where users struggled with the app's navigation. The magnitude of the issues meant that minor tweaks wouldn't be enough.
-
-<p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
-
-### Defining the Problem
-
-So, it was quite late into the redesign of the platform, we ran into some problems:
-
-1. Growing design team — each member was adding features without considering the whole experience. This was detrimental to scaling the app and delivering a good user experience.
-2. Inconsistent navigation for accessing content and various options
-3. Low cohesion - the content provided in the app had little consistency amongst the various panels making it difficult to find anything
-
-<mark>Vyond has a huge library of assets and each asset contains many properties. The number of assets and options is overwhelming and adds a lot of mental load and friction for users.</mark>
-
-<mark>On top of the app's library of content, users create their own characters, import content and ask us to customize assets too.</mark>
-
-<img src="/assets/img/asset-overview.png" class="rounded" alt="...">
-<figcaption class="figure-caption text-center">Assets & Properties</figcaption>
-
-<p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
-
-### Content Audit
-
-I audited the content for our entire ecosystem and mapped out the relationships, allowing us to visualise the connections and the gaps.
-
-<img src="/assets/img/properties.png" class="rounded" alt="...">
-<figcaption class="figure-caption text-center">a small simplified snippet of the content audit!</figcaption>
-
-<p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
-
-### Develop
-
-Taking the content mapping and translating it into a repeatable design pattern. 
-
-With this, I could share with designers to apply the pattern to existing and new designs. I also worked closely with developers and explained how to use the pattern and to ensure transparency amongst the teams.
-
-The pattern took into account our full spectrum of users:
-- **primary** - video creators
-- **secondary** - managers (gatekeepers)
-- **lifecycle stages** - beginners, intermediate and advanced users.
-
-<img src="/assets/img/journey.png" class="rounded" alt="...">
-<figcaption class="figure-caption text-center">Interaction design pattern</figcaption>
-
-<p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
-
-### Validating Design
-
-With the updated designers, I once again ran user tests and this time, they were able to successfully complete most of the tasks. The pattern created was not meant to be perfect and what followed was a lot of trial and error as each team member used the pattern. Overall it worked well.
-
-Here is the end result that I screen grabbed from the production site; the design pattern is shown in the short (26 secs) video clip below. It shows the pattern applied to how users browse, apply, save and reuse colors.
-
-<div style="padding:62.12% 0 0 0;position:relative;">
-  <iframe src="https://player.vimeo.com/video/676490224?h=a49b27c683&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="colorproperties">
-    
-  </iframe>
-</div>
-  <script src="https://player.vimeo.com/api/player.js"></script>
-  <p></p>
-
-<p class="text-center my-5" style="color: #212529;">- - -✂- - -</p>
-
-### Reflections
-
-The most challenging part was persuading stakeholders that it was necessary to go back and work on something foundational so late in the game. 
-
-Designers and developers were also needing convincing, as it meant giving up a bit of creative freedom and having to work with some constaints. 
-
-The constraints made by the pattern resulted in tough conversations within the design team but ultimately made the work stronger as it gave us more time to consider more important parts of the design.
-
+  <!-- Reflections Section -->
+  <div class="full-width-section" style="background-color: #EDEFF2; padding: 2rem 0;">
+    <div class="container content-wrapper">
+      <h3>Reflections</h3>
+      <p>The most challenging part was persuading stakeholders to revisit foundational elements so late in the project. Team members also had to adapt to working with constraints, which led to more focused and effective design decisions.</p>
+    </div>
+  </div>

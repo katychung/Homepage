@@ -102,16 +102,22 @@ a:hover {
     text-decoration: underline;
 }
 
+.full-width-section {
+  width: 100%;
+  padding: 80px 0; /* Adjust padding for spacing inside the section */
+}
+
+
 /* Content Wrapper Styles */
 .content-wrapper {
     max-width: 760px;
-/*    margin: 0 auto;*/
-    --bs-gutter-x: 1.5rem;
---bs-gutter-y: 0;
-width: 100%;
+    margin: 0 auto;
+    /*--bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;*/
+/*width: 100%;*/
 padding-right: calc(var(--bs-gutter-x) * .5);
 padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-top: 100px; /* Adjust based on the height of your navbar */
+/*    margin-top: 100px; /* Adjust based on the height of your navbar */*/
 
 }
 }
@@ -125,4 +131,10 @@ padding-left: calc(var(--bs-gutter-x) * .5);
 /* General Shadow Class */
 .shadow {
     box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+#passwordForm{
+
+    margin-top: 80px;
 }
