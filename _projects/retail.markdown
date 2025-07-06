@@ -25,7 +25,7 @@ tags: [Research, Strategy]
         <h2>🎯 Overview</h2>
         <p><strong>Flow</strong> is a B2B retail platform in Japan that turns in-store data — from POS, sensors, and cameras — into insights. But dashboards alone weren’t enough.</p>
         <p>I focused on a bigger goal: helping non-technical store staff feel confident acting on data, not just watching it.</p>
-        <p>Constraints created focus: we saw an opportunity to simplify data literacy, support new staff, and use LLMs to quietly translate raw metrics into clear, human-language guidance.</p>
+        <p>Constraints created focus: we saw an opportunity to simplify data literacy, support new staff, and use LLMs to translate raw metrics into clear, human-language guidance.</p>
       </div>
       <div class="col-4">
         <p><strong>Role</strong></p>
@@ -117,7 +117,7 @@ tags: [Research, Strategy]
           <li>Faster iteration with a single codebase</li>
         </ul>
       </li>
-      <li>LLM-driven natural language suggestions became a key enabler — turning dry data into guidance staff could act on</li>
+      <li>LLM-driven natural language suggestions became a key enabler — turning complex data into guidance staff could act on</li>
     </ul>
   </div>
 </div>
