@@ -1,9 +1,9 @@
 ---
 layout: project
 title: "DIY Animated Video Platform"
-date: 2018-05-01 00:00:00
+date: 1999-05-01 00:00:00
 project-date: "2014 - 2018"
-description: "Vyond is a leading DIY animated video SAAS platform for B2C and B2B."
+description: "Turning a complex animation tool into a intuitive experience for first-time users and supporting growing product complexity."
 teaser-image: /assets/img/ga-teaser.png
 screens: /assets/img/ga-screens.png
 tags: [Information architecture, Interaction Patterns]
@@ -13,7 +13,7 @@ tags: [Information architecture, Interaction Patterns]
   <div class="container content-wrapper">
     <h1>{{ page.title }}</h1>
     <p>{{ page.description }}</p>
-      <div class="card">
+      <div class="none">
         <img src="/assets/img/ga-screens.png" class="img-fluid rounded" alt="Editing Props in Vyond Studio">
       </div>
       <figcaption class="figure-caption text-center">Editing Props in Vyond Studio</figcaption>
@@ -34,8 +34,10 @@ tags: [Information architecture, Interaction Patterns]
           </ol>
         </div>
         <div class="col-4">
-          <p class="font-monospace">👤 Role</p>
+          <p><strong>Role</strong></p>
           <p>Senior UX Designer</p>
+          <p><strong>Team</strong></p>
+          <p>Design team & eng team, product owner.</p>
           <span class="badge rounded-pill bg-dark">Information architecture</span>
           <span class="badge rounded-pill bg-dark">Design Systems</span>
           <span class="badge rounded-pill bg-dark">Cross-functional Collaboration</span>
@@ -106,6 +108,6 @@ tags: [Information architecture, Interaction Patterns]
   <div class="full-width-section" style="background-color: #fff; padding: 2rem 0;">
     <div class="container content-wrapper">
       <h3>💬 Reflections</h3>
-      <p>One of the toughest challenges was advocating for architectural change late in the development cycle. Redesigning foundational structures requires stakeholder alignment, patience, and diplomacy. But that shift ultimately helped the team work with clearer constraints and freeing up time to work on deeper user problems.</p>
+      <p>One of the toughest challenges was advocating for architectural change late in the development cycle. Rethinking structure mid-cycle isn’t glamorous — but aligning stakeholders and tightening constraints gave the team breathing room to solve real user problems. But that shift ultimately helped the team work with clearer constraints and freeing up time to work on deeper user problems.</p>
     </div>
   </div>

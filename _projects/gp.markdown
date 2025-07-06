@@ -3,7 +3,7 @@ layout: project
 title: "Connected Store Experience"
 date: 2022-08-01 00:00:00
 project-date: "May 2022 - August 2022"
-description: "Leading Japan entertainment company connecting customers to stores."
+description: "Bridging screen and store for one of Japan’s top entertainment brands."
 teaser-image: assets/img/gp-teaser.png
 screens: assets/img/gp-screens.png
 tags: [Wireframes, Prototypes, Information architecture]
@@ -16,7 +16,7 @@ tags: [Wireframes, Prototypes, Information architecture]
     <p>{{ page.description }}</p>
     <div class="row">
       <div class="col">
-        <div class="card"><img src="/assets/img/gp-teaser.png" class="img-fluid rounded" alt="..."></div>
+        <div class="none"><img src="/assets/img/gp-teaser.png" class="img-fluid rounded" alt="..."></div>
         <figcaption class="figure-caption text-center">Wireframe</figcaption>
       </div>
     </div>
@@ -33,9 +33,9 @@ tags: [Wireframes, Prototypes, Information architecture]
           <p><strong>Goal</strong>: Design a mobile app to support in-store customers and strengthen brand connection through digital touchpoints.</p>
       </div>
       <div class="col-4">
-        <p class="font-monospace">👤 Role</p>
+        <p><strong>Role</strong></p>
         <p>UX Designer (Contract)</p>
-        <p class="font-monospace">🚀 Collaboration</p>
+        <p><strong>Team</strong></p>
         <p>Team - Goodpatch design team + 2 product managers. Daily meetings with the client and development teams.</p>
         {% for tag in page.tags %}
         <span class="badge rounded-pill bg-dark">{{ tag }}</span>

@@ -9,18 +9,36 @@
   <link rel="stylesheet" href="{{ "/assets/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/katy.css" | relative_url }}">
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <script src="https://unpkg.com/@rive-app/canvas"></script>
+  <script>
+document.querySelectorAll(".rive-canvas").forEach(canvas => {
+  const riveFile = canvas.dataset.rive;
+  const machineName = canvas.dataset.machine;
+
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = canvas.clientWidth * dpr;
+  canvas.height = canvas.clientHeight * dpr;
+
+  new rive.Rive({
+    src: riveFile,
+    canvas: canvas,
+    autoplay: true,
+    stateMachines: [machineName],
+    devicePixelRatio: dpr,
+  });
+});
+</script>
   <script src="https://kit.fontawesome.com/971eb46c9b.js" crossorigin="anonymous"></script>
   <!-- Google tag (gtag.js) -->
-    {% if site.url != "http://localhost:4000" %}
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6JN6LW9SD9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6JN6LW9SD9');
+  {% if site.url != "http://localhost:4000" %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6JN6LW9SD9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6JN6LW9SD9');
+  </script>
   {% endif %}
-</script>
 </head>
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

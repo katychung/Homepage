@@ -123,9 +123,16 @@ padding-left: calc(var(--bs-gutter-x) * .5);
 }
 
 /* Card Hover Effect */
+
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+}
+
 .card:hover {
     transition: box-shadow 0.4s ease;
     box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
 }
 
 /* General Shadow Class */
@@ -133,8 +140,42 @@ padding-left: calc(var(--bs-gutter-x) * .5);
     box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
+@keyframes wave {
+  0%   { transform: rotate(0deg); }
+  10%  { transform: rotate(14deg); }
+  20%  { transform: rotate(-8deg); }
+  30%  { transform: rotate(14deg); }
+  40%  { transform: rotate(-4deg); }
+  50%  { transform: rotate(10deg); }
+  60%  { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+.wave-emoji {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave 2s infinite;
+}
+
+
+.oden-logo {
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.oden-logo:hover {
+  transform: rotate(-6deg) scale(1.04);
+}
+
 
 #passwordForm{
 
     margin-top: 80px;
+}
+
+canvas {
+  width: 100px;
+  height: 100px;
+  display: block;
 }
