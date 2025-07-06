@@ -5,31 +5,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Katy Chung / UX Designer / Tokyo / {{ page.title }}</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ "/assets/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/katy.css" | relative_url }}">
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- Rive -->
   <script src="https://unpkg.com/@rive-app/canvas"></script>
   <script>
-document.querySelectorAll(".rive-canvas").forEach(canvas => {
-  const riveFile = canvas.dataset.rive;
-  const machineName = canvas.dataset.machine;
+    document.querySelectorAll(".rive-canvas").forEach(canvas => {
+      const riveFile = canvas.dataset.rive;
+      const machineName = canvas.dataset.machine;
 
-  const dpr = window.devicePixelRatio || 1;
-  canvas.width = canvas.clientWidth * dpr;
-  canvas.height = canvas.clientHeight * dpr;
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = canvas.clientWidth * dpr;
+      canvas.height = canvas.clientHeight * dpr;
 
-  new rive.Rive({
-    src: riveFile,
-    canvas: canvas,
-    autoplay: true,
-    stateMachines: [machineName],
-    devicePixelRatio: dpr,
-  });
-});
-</script>
+      new rive.Rive({
+        src: riveFile,
+        canvas: canvas,
+        autoplay: true,
+        stateMachines: [machineName],
+        devicePixelRatio: dpr,
+      });
+    });
+  </script>
+
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/971eb46c9b.js" crossorigin="anonymous"></script>
-  <!-- Google tag (gtag.js) -->
+
+  <!-- Google Analytics -->
   {% if site.url != "http://localhost:4000" %}
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6JN6LW9SD9"></script>
   <script>
@@ -40,13 +47,19 @@ document.querySelectorAll(".rive-canvas").forEach(canvas => {
   </script>
   {% endif %}
 </head>
+
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <div class="container content-wrapper">{% include navigation.html %}
-      <div class="row py-5">
-        <div class="col">
-        <h1>{{ page.title }}</h1>
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+
+  <!-- Navigation and Content -->
+  <div class="container content-wrapper">
+    {% include navigation.html %}
+    
+    <div class="row py-5 gy-4">
+      <div class="col">
+        <h1 class="mt-4">{{ page.title }}</h1>
         <p class="fw-light">{{ page.date | date: "%B %Y" }}</p>
         <p>{{ content }}</p>
       </div>
