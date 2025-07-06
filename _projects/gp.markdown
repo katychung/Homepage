@@ -6,7 +6,7 @@ project-date: "May 2022 - August 2022"
 description: "Bridging screen and store for one of Japan’s top entertainment brands."
 teaser-image: assets/img/gp-teaser.png
 screens: assets/img/gp-screens.png
-tags: [Wireframes, Prototypes, Information architecture]
+tags: [Wireframes, Prototypes]
 ---
 
 
