@@ -5,7 +5,7 @@ project-date: "March 2024–Current"
 date: 2001-05-01 00:00:00
 description: "From complex store data to clear and confident actions."
 teaser-image: assets/img/retail-teaser.png
-tags: [Research, Strategy]
+tags: [Research, Strategy, Gamification]
 ---
 
 <div class="full-width-section" style="background-color: #EDEFF2;">
