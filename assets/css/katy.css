@@ -257,7 +257,7 @@ body.dark-mode .sidebar-social a:hover {
   flex: 1;
 }
 
-/* Mobile — hamburger menu */
+/* Mobile — inline nav bar */
 @media (max-width: 767px) {
   .site-layout {
     flex-direction: column;
@@ -269,7 +269,10 @@ body.dark-mode .sidebar-social a:hover {
     height: auto;
     border-right: none;
     border-bottom: 1px solid rgba(220, 220, 220, 0.6);
-    padding: 0.3rem 1.25rem;
+    padding: 0.4rem 1.25rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
   }
 
   body.dark-mode .sidebar {
@@ -279,32 +282,19 @@ body.dark-mode .sidebar-social a:hover {
 
   .sidebar-header {
     margin-bottom: 0;
+    flex-shrink: 0;
   }
 
   .sidebar-toggle {
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--primary-color);
-    font-size: 1.1rem;
-    padding: 0;
-    padding-top: 0.1rem;
-    line-height: 0.9;
-  }
-
-  body.dark-mode .sidebar-toggle {
-    color: #d8d8d8;
+    display: none;
   }
 
   .sidebar-collapsible {
-    display: none;
-    padding-bottom: 1rem;
-  }
-
-  .sidebar.open .sidebar-collapsible {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    padding-bottom: 0;
   }
 
   .sidebar-photo {
@@ -312,17 +302,22 @@ body.dark-mode .sidebar-social a:hover {
   }
 
   .sidebar-nav {
-    padding-top: 0.75rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 0.75rem;
+    padding-top: 0;
+    flex: 1;
   }
 
   .sidebar-bottom {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(220, 220, 220, 0.4);
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+    flex-shrink: 0;
   }
 
-  body.dark-mode .sidebar-bottom {
-    border-top-color: #2e2e2e;
+  .sidebar-social {
+    display: none;
   }
 
   .main-content {
