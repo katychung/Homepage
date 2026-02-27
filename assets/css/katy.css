@@ -57,6 +57,17 @@ body {
   text-decoration: none;
 }
 
+.sidebar-photo {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-photo img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .sidebar-nav {
   display: flex;
   flex-direction: column;
