@@ -140,8 +140,8 @@ body.dark-mode .sidebar-link.active::before {
 .sidebar-bottom .dark-toggle-label::after {
   content: 'Lights out';
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  transform: none;
   bottom: calc(100% + 6px);
   background: rgba(33, 37, 41, 0.88);
   color: #fff;
