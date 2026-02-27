@@ -292,6 +292,10 @@ body.dark-mode .sidebar-social a:hover {
     flex-direction: column;
   }
 
+  .sidebar-photo {
+    display: none;
+  }
+
   .sidebar-nav {
     padding-top: 0.75rem;
   }
