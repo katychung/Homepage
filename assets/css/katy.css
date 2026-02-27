@@ -300,6 +300,74 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ─────────── CONTACT FORM ─────────── */
+.contact-input {
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+  font-size: 0.875rem;
+  color: var(--primary-color);
+  box-shadow: none;
+}
+
+.contact-input:focus {
+  border-bottom-color: var(--primary-color);
+  background: transparent;
+  box-shadow: none;
+  color: var(--primary-color);
+}
+
+.contact-input::placeholder {
+  color: #bbb;
+}
+
+.contact-btn {
+  border: 1px solid var(--primary-color);
+  border-radius: 0;
+  font-size: 0.875rem;
+  padding: 0.4rem 1.5rem;
+  color: var(--primary-color);
+  background: transparent;
+  letter-spacing: 0.05em;
+}
+
+.contact-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.contact-success {
+  font-size: 0.875rem;
+  color: #888;
+}
+
+body.dark-mode .contact-input {
+  border-bottom-color: #444;
+  color: #d8d8d8;
+}
+
+body.dark-mode .contact-input:focus {
+  border-bottom-color: #d8d8d8;
+  color: #d8d8d8;
+}
+
+body.dark-mode .contact-input::placeholder {
+  color: #555;
+}
+
+body.dark-mode .contact-btn {
+  border-color: #d8d8d8;
+  color: #d8d8d8;
+}
+
+body.dark-mode .contact-btn:hover {
+  background: #d8d8d8;
+  color: #1a1a1a;
+}
+
 /* ─────────── NAVBAR ─────────── */
 .navbar.custom-navbar-bg {
   border-bottom: 1px solid rgba(220, 220, 220, 0.5);
