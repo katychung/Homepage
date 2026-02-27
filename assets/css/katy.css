@@ -92,6 +92,23 @@ body {
   text-decoration: none;
 }
 
+.sidebar-link.active::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  margin-right: 0.45rem;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+body.dark-mode .sidebar-link.active::before {
+  background-color: #d8d8d8;
+}
+
 .sidebar-link.active:hover {
   text-decoration: underline;
 }
@@ -433,6 +450,35 @@ body.dark-mode .contact-btn:hover {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+/* ─────────── PROJECT TAGS & LOCK ─────────── */
+.project-tag {
+  font-size: 0.68rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #999;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 2px 6px;
+  margin-right: 4px;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+body.dark-mode .project-tag {
+  color: #666;
+  border-color: #3a3a3a;
+}
+
+.card-lock {
+  color: #ccc;
+  font-size: 0.7rem;
+  vertical-align: middle;
+}
+
+body.dark-mode .card-lock {
+  color: #555;
 }
 
 /* ─────────── IMAGES ─────────── */
