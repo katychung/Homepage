@@ -236,8 +236,6 @@ body.dark-mode .sidebar-social a:hover {
 
   .sidebar-header {
     margin-bottom: 0;
-    height: 2rem;
-    align-items: center;
   }
 
   .sidebar-toggle {
@@ -248,9 +246,7 @@ body.dark-mode .sidebar-social a:hover {
     color: var(--primary-color);
     font-size: 1.1rem;
     padding: 0;
-    line-height: 1;
-    display: flex;
-    align-items: center;
+    line-height: 0.9;
   }
 
   body.dark-mode .sidebar-toggle {
