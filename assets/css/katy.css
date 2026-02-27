@@ -6,13 +6,27 @@
   --sticky-2: #80CAFF;
   --sticky-3: #85E0A3;
   --sticky-4: #FFC470;
+
+  /* Type scale */
+  --text-xs: 0.7rem;    /* labels, tags, tiny UI */
+  --text-sm: 0.8rem;    /* all UI body text */
+  --text-md: 0.9rem;    /* brand, slightly prominent */
 }
 
 /* ─────────── GLOBAL STYLES ─────────── */
 body {
   line-height: 1.9;
   overflow: hidden; /* each panel scrolls independently */
+  font-size: 0.9375rem; /* 15px — slightly tighter than Bootstrap's 16px base */
 }
+
+/* Tightened heading scale */
+h1 { font-size: 1.9rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.15rem; }
+h4 { font-size: 1rem; }
+h5 { font-size: 0.9rem; }
+h6 { font-size: var(--text-sm); }
 
 @media (max-width: 767px) {
   body { overflow: auto; }
@@ -44,7 +58,7 @@ body {
 
 .sidebar-brand {
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: var(--text-md);
   color: var(--primary-color);
   text-decoration: none;
   display: block;
@@ -77,7 +91,7 @@ body {
 .sidebar-link {
   color: var(--primary-color);
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
   padding: 0.3rem 0;
   display: block;
 }
@@ -131,7 +145,7 @@ body.dark-mode .sidebar-link.active::before {
   bottom: calc(100% + 6px);
   background: rgba(33, 37, 41, 0.88);
   color: #fff;
-  font-size: 0.7rem;
+  font-size: var(--text-xs);
   padding: 3px 8px;
   border-radius: 4px;
   white-space: nowrap;
@@ -161,7 +175,7 @@ body.dark-mode .sidebar-bottom .dark-toggle-label::after {
 
 .sidebar-email {
   display: block;
-  font-size: 0.75rem;
+  font-size: var(--text-sm);
   color: #999;
   text-decoration: none;
   margin-top: 0.75rem;
@@ -194,7 +208,7 @@ body.dark-mode .sidebar-email:hover {
 
 /* ─────────── PAGE LABEL ─────────── */
 .page-label {
-  font-size: 0.7rem;
+  font-size: var(--text-xs);
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -340,7 +354,7 @@ a:hover {
   padding-left: 0.25rem;
   padding-right: 0;
   background: transparent;
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
   color: var(--primary-color);
   box-shadow: none;
 }
@@ -359,7 +373,7 @@ a:hover {
 .contact-btn {
   border: 1px solid var(--primary-color);
   border-radius: 0;
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
   padding: 0.4rem 1.5rem;
   color: var(--primary-color);
   background: transparent;
@@ -372,7 +386,7 @@ a:hover {
 }
 
 .contact-success {
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
   color: #888;
 }
 
@@ -458,7 +472,7 @@ body.dark-mode .contact-btn:hover {
 
 /* ─────────── PROJECT TAGS & LOCK ─────────── */
 .project-tag {
-  font-size: 0.68rem;
+  font-size: var(--text-xs);
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: #999;
@@ -477,7 +491,7 @@ body.dark-mode .project-tag {
 
 .card-lock {
   color: #ccc;
-  font-size: 0.7rem;
+  font-size: var(--text-xs);
   vertical-align: middle;
 }
 
@@ -605,7 +619,7 @@ img.img-fluid.rounded {
 }
 
 .post-inline h2 {
-  font-size: 0.85rem;
+  font-size: var(--text-sm);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
