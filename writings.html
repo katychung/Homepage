@@ -9,11 +9,10 @@ title: "Notes"
 
 <div class="content-wrapper">
 
-  <p class="fs-6 font-monospace"><b>Writing</b></p>
   {% assign writing_posts = site.posts | where: "tags", "writing" %}
   {% for post in writing_posts %}
   <div class="py-4 border-bottom">
-    <h5 class="mb-1">{{ post.title }}</h5>
+    <h3 class="mb-1">{{ post.title }}</h3>
     <p class="fw-light small mb-3">{{ post.date | date: "%B %Y" }}</p>
     <div class="post-inline">{{ post.content }}</div>
   </div>
@@ -23,7 +22,7 @@ title: "Notes"
   {% assign book_posts = site.posts | where: "tags", "book" %}
   {% for post in book_posts %}
   <div class="py-4 border-bottom">
-    <h5 class="mb-1">{{ post.title }}</h5>
+    <h3 class="mb-1">{{ post.title }}</h3>
     <p class="fw-light small mb-3">{{ post.date | date: "%B %Y" }}</p>
     <div class="post-inline">{{ post.content }}</div>
   </div>
