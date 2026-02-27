@@ -246,6 +246,7 @@ body.dark-mode .sidebar-social a:hover {
     color: var(--primary-color);
     font-size: 1.1rem;
     padding: 0;
+    padding-top: 0.1rem;
     line-height: 0.9;
   }
 
