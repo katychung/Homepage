@@ -1,0 +1,20 @@
+---
+layout: default
+title: "Notes"
+---
+
+<div class="content-wrapper pt-5 mt-4 pb-3">
+  <h1 class="page-label">Notes</h1>
+</div>
+
+<div class="content-wrapper">
+
+  {% for post in site.posts %}
+  <div class="py-4 border-bottom">
+    <h3 class="mb-1">{{ post.title }}</h3>
+    <p class="fw-light small mb-3">{{ post.date | date: "%B %Y" }}</p>
+    <div class="post-inline">{{ post.content }}</div>
+  </div>
+  {% endfor %}
+
+</div>
