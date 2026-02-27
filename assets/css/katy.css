@@ -281,6 +281,11 @@ body.dark-mode .sidebar-social a:hover {
     height: auto;
     overflow-y: visible;
   }
+
+  .main-content .container {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
 }
 
 a {
