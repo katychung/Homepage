@@ -284,8 +284,9 @@ body.dark-mode .sidebar-social a:hover {
   }
 
   .main-content .container {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
   }
 }
 
