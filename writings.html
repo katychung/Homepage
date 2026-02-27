@@ -1,37 +1,32 @@
 ---
 layout: default
-title: "Writings"
+title: "Notes"
 ---
 
-<div class="row py-5 my-5">
-  <h1>Posts・ポスト</h1>
+<div class="content-wrapper pt-5 mt-4 pb-3">
+  <h1 class="page-label">Notes</h1>
 </div>
 
+<div class="content-wrapper">
 
-<div class="row py-4">
-  <p class="fs-6 font-monospace"><b>Read / Reading</b></p>
-  {% assign writing_posts = site.posts | where: "tags", "book" %}{% for post in writing_posts %}
-    <div class="col-md-4 my-2">
-      <div class="card"><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
-        <img src="{{ post.image }}" class="card-img-top-fit" alt="title cover"></a>
-          <div class="card-body">
-            <h5 class="card-title">{{ post.title }}</h5>
-            <p class="card-text text-truncate">{{ post.description }}</p>
-          </div>
-        </div>
-    </div>{% endfor %}
-</div>
+  <p class="fs-6 font-monospace"><b>Writing</b></p>
+  {% assign writing_posts = site.posts | where: "tags", "writing" %}
+  {% for post in writing_posts %}
+  <div class="py-4 border-bottom">
+    <h5 class="mb-1">{{ post.title }}</h5>
+    <p class="fw-light small mb-3">{{ post.date | date: "%B %Y" }}</p>
+    <div class="post-inline">{{ post.content }}</div>
+  </div>
+  {% endfor %}
 
-<div class="row py-4">
-  <p class="fs-6 font-monospace"><b>Writings</b></p>
-  {% assign writing_posts = site.posts | where: "tags", "writing" %}{% for post in writing_posts %}
-    <div class="col-md-4 my-2">
-      <div class="card"><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
-        <img src="{{ post.image }}" class="card-img-top-fit" alt="title cover"></a>
-          <div class="card-body">
-            <h5 class="card-title">{{ post.title }}</h5>
-            <p class="card-text text-truncate">{{ post.description }}</p>
-          </div>
-        </div>
-    </div>{% endfor %}
+  <p class="fs-6 font-monospace mt-5"><b>Reading</b></p>
+  {% assign book_posts = site.posts | where: "tags", "book" %}
+  {% for post in book_posts %}
+  <div class="py-4 border-bottom">
+    <h5 class="mb-1">{{ post.title }}</h5>
+    <p class="fw-light small mb-3">{{ post.date | date: "%B %Y" }}</p>
+    <div class="post-inline">{{ post.content }}</div>
+  </div>
+  {% endfor %}
+
 </div>

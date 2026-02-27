@@ -3,17 +3,18 @@ layout: post
 title:  "Prototyping to Learn"
 date:   2022-08-14 11:57:50 +0900
 image: /assets/books/cover.jpg
-description: Within the design and development process; from discovery, definition, development and delivery. 
+description: "Prototype early to learn, not late to confirm."
 tags: writing
 ---
-Within the design and development process; from discovery, definition, development and delivery. Very often, prototyping typically gets utilised towards the latter half of the process only. We tend to all feel positive about prototypes but don't tend to take action on it.
 
-<img src="/assets/img/double-diamond-proto.svg" class="rounded" alt="Prototyping to learn - where in the process">
+Most teams save prototyping for near the end. By then, the direction is set and there's too much invested to change course. The prototype becomes a formality — built to confirm, not to question.
 
-So not only prototyping to validate a design, how about thinking of prototyping as a way of learning. Regardless of project complexity, prototyping has a lot of value. When it comes to user facing products and services, nobody knows what will work or what will not work without actual people using it. Too much discussion results in long meetings stuck in conjecture.
+That's a waste.
 
-We could say that that there are at least three types of prototyping:
-1. Interactive (e.g. digital)
-2. Physical (e.g. moving through a physical space)
-3. Conversational (e.g. written communication, real life)
+Prototyping works best when you still don't know the answer. A rough prototype early in a project does something no meeting or document can: it makes assumptions visible. You stop arguing about what might work and start watching what actually does.
 
+And it doesn't need to be digital. Walking a colleague through a sketch is a prototype. A scripted conversation simulating a new onboarding flow is a prototype. A paper journey taped to a whiteboard is a prototype.
+
+The medium isn't the point. The point is getting something in front of a real person before your team has become too attached to defend it.
+
+Build earlier. Build rougher. Learn faster.

@@ -25,7 +25,7 @@ tags: [Information architecture, Interaction Patterns]
     <div class="container content-wrapper">
       <div class="row py-3">
         <div class="col-8">
-          <h3>🎯 Overview</h3>
+          <h3>Overview</h3>
           <p>As Vyond transitioned away from legacy technology, we seized the opportunity to rethink the product’s foundation — starting with the information architecture. The redesign wasn’t just visual; it was structural. </p>
           <p>By first redefining how content and workflows were organized, we laid the groundwork for more scalable, consistent, and user-centered experiences across Vyond’s <strong>two core products</strong>:</p>
           <ol>
@@ -51,7 +51,7 @@ tags: [Information architecture, Interaction Patterns]
   <!-- Background Section -->
   <div class="full-width-section" style="background-color: #EDEFF2; padding: 2rem 0;">
     <div class="container content-wrapper">
-      <h3>🔍 Background & Context</h3>
+      <h3>Background & Context</h3>
       <p>I joined Vyond in the Hong Kong office in the early days when the company was at an turning point, approaching product-market fit. Our team was lean — 3 designers among approx. 30 employees. We were deeply hands-on and cross-functional, working closely with colleagues in Taiwan and San Francisco.</p>
       <p>During this period, I helped lay the groundwork for scalable product design as the company doubled in size annually. Some key contributions included:</p>
       <ul>
@@ -64,7 +64,7 @@ tags: [Information architecture, Interaction Patterns]
   </div>
   <div class="full-width-section" style="background-color: #fff; padding: 2rem 0;">
     <div class="container content-wrapper">
-      <h3>🔧 Process & Approach</h3>
+      <h3>Process & Approach</h3>
       <p>We applied a Double Diamond framework to move from ambiguity to clarity:</p>
       <h4>1. Discover: Research & Audits</h4>
       <ul>
@@ -97,7 +97,7 @@ tags: [Information architecture, Interaction Patterns]
   <!-- Example Section -->
   <div class="full-width-section" style="background-color: #EDEFF2; padding: 2rem 0;">
     <div class="container content-wrapper">
-      <h3>📹 Example: Pattern in Action (26s)</h3>
+      <h3>Example: Pattern in Action (26s)</h3>
       <p>Design pattern in action, demonstrating how users browse, apply, save, and reuse colors.</p>
       <div style="padding:62.12% 0 0 0;position:relative;">
         <iframe src="https://player.vimeo.com/video/676490224?h=a49b27c683&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Color Properties"></iframe>
@@ -107,7 +107,7 @@ tags: [Information architecture, Interaction Patterns]
   <!-- Reflections Section -->
   <div class="full-width-section" style="background-color: #fff; padding: 2rem 0;">
     <div class="container content-wrapper">
-      <h3>💬 Reflections</h3>
+      <h3>Reflections</h3>
       <p>One of the toughest challenges was advocating for architectural change late in the development cycle. Rethinking structure mid-cycle isn’t glamorous — but aligning stakeholders and tightening constraints gave the team breathing room to solve real user problems. But that shift ultimately helped the team work with clearer constraints and freeing up time to work on deeper user problems.</p>
     </div>
   </div>
