@@ -6,19 +6,10 @@ title: "Projects"
 <div class="row pt-5 mt-4 pb-3">
   <h1 class="page-label">Projects</h1>
 </div>
-    <div class="row py-4">{% for project in site.projects %}
-        <div class="col-md-6">
-          <div class="card my-4"><a href="{{ site.url }}{{ site.baseurl }}{{ project.url }}">
-            <img src="{{ project.teaser-image }}" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">{{ project.title }} <i class="fa-solid fa-lock fa-xs card-lock"></i></h5>
-                <p class="card-text text-truncate">{{ project.description }}</p>
-                {% for tag in project.tags %}
-                <span class="project-tag">{{ tag }}</span>
-                {% endfor %}
-              </div>
-            </div>
-        </div>{% endfor %}
-    </div>
 
-
+<div class="row pb-5">
+  <div class="col-12 col-md-8">
+    <p>I work on complex UX problems across product, platform, and enterprise — from redesigning animation tools used by millions, to leading design at scale within global organisations.</p>
+    <p>My work is shared selectively. If you'd like to see case studies, <a href="/about.html#contact-form">get in touch</a>.</p>
+  </div>
+</div>

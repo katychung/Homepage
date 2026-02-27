@@ -138,7 +138,7 @@ body.dark-mode .sidebar-link.active::before {
 }
 
 .sidebar-bottom .dark-toggle-label::after {
-  content: 'Toggle theme';
+  content: 'Lights out';
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -159,6 +159,7 @@ body.dark-mode .sidebar-link.active::before {
 }
 
 body.dark-mode .sidebar-bottom .dark-toggle-label::after {
+  content: 'Lights on';
   background: rgba(216, 216, 216, 0.92);
   color: #121212;
 }

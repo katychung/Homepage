@@ -17,21 +17,6 @@ title: "Home"
     </div>
 </div>
 
-<div class="row py-4">
-    <p class="fs-6 font-monospace"><b>Projects・プロジェクト</b></p>{% for project in site.projects %}
-    <div class="col-md-6 my-2">
-      <div class="card h-100"><a href="{{ site.url }}{{ site.baseurl }}{{ project.url }}">
-        <img src="{{ project.teaser-image }}" class="card-img-top" alt="..."></a>
-          <div class="card-body">
-            <h5 class="card-title">{{ project.title }}</h5>
-            <p class="card-text">{{ project.description }}</p>
-                {% for tag in project.tags %}
-                <span class="project-tag">{{ tag }}</span>
-                {% endfor %}
-          </div>
-        </div>
-    </div>{% endfor %}
-</div>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
