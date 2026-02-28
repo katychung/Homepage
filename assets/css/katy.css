@@ -315,6 +315,8 @@ body.dark-mode .sidebar-social a:hover {
 
   .main-content .container {
     max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -441,15 +443,6 @@ body.dark-mode .contact-btn:hover {
 .content-wrapper {
   max-width: 760px;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-@media (min-width: 768px) {
-  .content-wrapper {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 
 /* ─────────── PROJECT TAGS & LOCK ─────────── */
