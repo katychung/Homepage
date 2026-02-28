@@ -46,6 +46,10 @@
     {% include sidebar.html %}
     <main class="main-content">
 
+      <div class="container pt-4 pb-2">
+        <a href="/projects.html" class="back-link">← Projects</a>
+      </div>
+
       <div id="passwordForm" class="container py-5 mt-4">
         <p class="page-label mb-3">Password required</p>
         <input
@@ -83,7 +87,7 @@
         setTimeout(function() {
           document.getElementById('bypassMsg').style.display = 'none';
           document.getElementById('content').style.display = 'block';
-        }, 2600);
+        }, 1800);
       } else {
         document.getElementById('password').focus();
       }

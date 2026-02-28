@@ -655,6 +655,26 @@ body.dark-mode .post-inline h2 {
 }
 
 
+/* ─────────── BACK LINK ─────────── */
+.back-link {
+  font-size: var(--text-sm);
+  color: #bbb;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+body.dark-mode .back-link {
+  color: #555;
+}
+
+body.dark-mode .back-link:hover {
+  color: #d8d8d8;
+}
+
 /* ─────────── BYPASS LOADING BAR ─────────── */
 .bypass-bar-track {
   width: 200px;
@@ -669,7 +689,7 @@ body.dark-mode .post-inline h2 {
   width: 0%;
   background: var(--primary-color);
   border-radius: 1px;
-  animation: bypassLoad 2.4s cubic-bezier(0.4, 0, 0.6, 1) forwards;
+  animation: bypassLoad 1.6s cubic-bezier(0.4, 0, 0.6, 1) forwards;
 }
 
 @keyframes bypassLoad {
