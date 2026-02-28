@@ -83,11 +83,9 @@ h6 { font-size: var(--text-sm); }
 }
 
 .sidebar-nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
-  grid-auto-flow: column;
-  gap: 0.1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
 }
 
 .sidebar-link {
@@ -287,10 +285,11 @@ body.dark-mode .sidebar-social a:hover {
   }
 
   .sidebar-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0 0.75rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    gap: 0 1rem;
     padding-top: 0;
     flex: 1;
   }
