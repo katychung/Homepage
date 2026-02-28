@@ -18,30 +18,35 @@ tags: [Information architecture, Interaction Patterns]
       <img src="/assets/img/ga-screens.png" class="img-fluid rounded" alt="Editing Props in Vyond Studio">
       <figcaption class="figure-caption text-center mt-2">Editing Props in Vyond Studio</figcaption>
     </div>
+    <div class="d-flex gap-5 flex-wrap pt-2">
+      <div>
+        <p class="page-label mb-1">Role</p>
+        <p class="mb-0">Senior UX Designer</p>
+      </div>
+      <div>
+        <p class="page-label mb-1">Team</p>
+        <p class="mb-0">Design, engineering & product</p>
+      </div>
+      <div>
+        <p class="page-label mb-1">Timeline</p>
+        <p class="mb-0">2014 – 2018</p>
+      </div>
+      <div>
+        <p class="page-label mb-1">Skills</p>
+        <span class="project-tag">Information architecture</span>
+        <span class="project-tag">Design Systems</span>
+        <span class="project-tag">Cross-functional Collaboration</span>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- Overview Section -->
 <div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
   <div class="container">
-    <div class="row py-3">
-      <div class="col-8">
-        <h3 class="page-label mb-3">Overview</h3>
-        <p>As Vyond transitioned away from legacy technology, we seized the opportunity to rethink the product's foundation — starting with the information architecture. The redesign wasn't just visual; it was structural.</p>
-        <p>By first redefining how content and workflows were organized, we laid the groundwork for more scalable, consistent, and user-centered experiences across Vyond's two core products — <strong>The Studio</strong> for creating animated videos, and <strong>The Character Creator</strong> for building customizable characters.</p>
-      </div>
-      <div class="col-4">
-        <p class="page-label mb-1">Role</p>
-        <p>Senior UX Designer</p>
-        <p class="page-label mb-1">Team</p>
-        <p>Design, engineering & product</p>
-        <p class="page-label mb-1">Timeline</p>
-        <p>2014 – 2018</p>
-        <span class="project-tag">Information architecture</span>
-        <span class="project-tag">Design Systems</span>
-        <span class="project-tag">Cross-functional Collaboration</span>
-      </div>
-    </div>
+    <h3 class="page-label mb-3">Overview</h3>
+    <p>As Vyond transitioned away from legacy technology, we seized the opportunity to rethink the product's foundation — starting with the information architecture. The redesign wasn't just visual; it was structural.</p>
+    <p>By first redefining how content and workflows were organized, we laid the groundwork for more scalable, consistent, and user-centered experiences across Vyond's two core products — <strong>The Studio</strong> for creating animated videos, and <strong>The Character Creator</strong> for building customizable characters.</p>
   </div>
 </div>
 
