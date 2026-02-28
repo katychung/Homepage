@@ -62,7 +62,10 @@
       </div>
 
       <div id="bypassMsg" class="container py-5 mt-4" style="display:none;">
-        <p class="page-label">Access remembered — loading project</p>
+        <p class="page-label mb-3">Access remembered — loading project</p>
+        <div class="bypass-bar-track">
+          <div class="bypass-bar"></div>
+        </div>
       </div>
 
       <div id="content" style="display:none;">
@@ -80,7 +83,7 @@
         setTimeout(function() {
           document.getElementById('bypassMsg').style.display = 'none';
           document.getElementById('content').style.display = 'block';
-        }, 1200);
+        }, 2600);
       } else {
         document.getElementById('password').focus();
       }

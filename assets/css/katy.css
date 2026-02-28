@@ -655,6 +655,34 @@ body.dark-mode .post-inline h2 {
 }
 
 
+/* ─────────── BYPASS LOADING BAR ─────────── */
+.bypass-bar-track {
+  width: 200px;
+  height: 2px;
+  background: #e8e8e8;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.bypass-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--primary-color);
+  border-radius: 1px;
+  animation: bypassLoad 2.4s cubic-bezier(0.4, 0, 0.6, 1) forwards;
+}
+
+@keyframes bypassLoad {
+  0%   { width: 0%; }
+  60%  { width: 75%; }
+  85%  { width: 92%; }
+  100% { width: 100%; }
+}
+
+body.dark-mode .bypass-bar-track {
+  background: #2e2e2e;
+}
+
 /* ─────────── DARK MODE ─────────── */
 body {
   transition: background-color 0.2s ease, color 0.2s ease;
