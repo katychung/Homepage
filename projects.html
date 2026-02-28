@@ -3,22 +3,27 @@ layout: default
 title: "Projects"
 ---
 
-<div class="row py-5 my-5">
-  <h1>Past Projects・過去のプロジェクト</h1>
+<div class="row pt-5 mt-4 pb-3">
+  <h1 class="page-label">Projects</h1>
 </div>
-    <div class="row py-4">{% for project in site.projects %}
-        <div class="col-md-6">
-          <div class="card my-4"><a href="{{ site.url }}{{ site.baseurl }}{{ project.url }}">
-            <img src="{{ project.teaser-image }}" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">{{ project.title }} 🔒</h5>
-                <p class="card-text text-truncate">{{ project.description }}</p>
-                {% for tag in project.tags %}
-                <span class="badge rounded-pill bg-dark">{{ tag }}</span>
-                {% endfor %}
-              </div>
-            </div>
-        </div>{% endfor %}
-    </div>
 
+<div class="row pb-4">
+  <div class="col-12 col-md-8">
+    <p>End-to-end UX from research to release — across tech startups, agencies, and tech giants. <a href="/about.html#contact-form">Let's talk</a> to share more.</p>
+  </div>
+</div>
 
+<div class="row py-2">{% for project in site.projects %}
+    <div class="col-md-6">
+      <div class="card my-4"><a href="{{ site.url }}{{ site.baseurl }}{{ project.url }}">
+        <img src="{{ project.teaser-image }}" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">{{ project.title }} <i class="fa-solid fa-lock fa-xs card-lock"></i></h5>
+            <p class="card-text text-truncate">{{ project.description }}</p>
+            {% for tag in project.tags %}
+            <span class="project-tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+    </div>{% endfor %}
+</div>

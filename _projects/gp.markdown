@@ -28,7 +28,7 @@ tags: [Wireframes, Prototypes]
   <div class="container content-wrapper">
     <div class="row ">
       <div class="col-8">
-        <h3>🎯 Overview</h3>
+        <h3>Overview</h3>
         <p>Short-term project with a major Japanese entertainment (エンタメ) company launching a new chain of physical stores. </p>
           <p><strong>Goal</strong>: Design a mobile app to support in-store customers and strengthen brand connection through digital touchpoints.</p>
       </div>
@@ -50,7 +50,7 @@ tags: [Wireframes, Prototypes]
 <!-- Background Section -->
 <div class="full-width-section" style="background-color: #fff;">
   <div class="container content-wrapper">
-    <h3>🔍 Background & Context</h3>
+    <h3>Background & Context</h3>
     <p>I joined <strong>Goodpatch</strong> — a leading design agency in Japan — to support a fast-moving, client-facing project. The client, a prominent Japanese entertainment brand, needed a mobile app to accompany its growing number of retail stores.</p>
     <p>This was my first time working fully with a Japanese team — a rewarding challenge in terms of both language and culture, and a great opportunity to deliver design in a short timeline.</p>
   </div>
@@ -59,7 +59,7 @@ tags: [Wireframes, Prototypes]
 <!-- Process Section -->
 <div class="full-width-section" style="background-color: #EDEFF2; padding: 2rem 0;">
   <div class="container content-wrapper">
-    <h3>🔧 Process & Approach</h3>
+    <h3>Process & Approach</h3>
     <p>We moved quickly to deliver actionable designs aligned with the client’s expectations, using a lean, iterative approach.</p>
     <ul>
       <li><strong>Understand:</strong>Reviewed the documentation and noted key questions. Clarified expectations with the stakeholders.</li>
@@ -80,7 +80,7 @@ tags: [Wireframes, Prototypes]
 <!-- Collaboration Section -->
 <div class="full-width-section" style="background-color: #EDEFF2; padding: 2rem 0;">
   <div class="container content-wrapper">
-    <h3>🤝 Collaboration</h3>
+    <h3>Collaboration</h3>
     <p>We held daily meetings to stay aligned with stakeholders. Together, we:</p>
     <ul>
       <li>Defined target users and the core concept</li>
@@ -94,7 +94,7 @@ tags: [Wireframes, Prototypes]
 <!-- Development & Design Section -->
 <div class="full-width-section" style="background-color: #fff; padding: 2rem 0;">
   <div class="container content-wrapper">
-    <h3>📱 Example Screens (Obfuscated)</h3>
+    <h3>Example Screens (Obfuscated)</h3>
     <img src="/assets/img/gp-screens.png" class="img-fluid rounded" alt="wireframes">
     <figcaption class="figure-caption text-center">Home, search results, and result details screens</figcaption>
   </div>
@@ -103,7 +103,7 @@ tags: [Wireframes, Prototypes]
 <!-- Reflection Section -->
 <div class="full-width-section" style="background-color: #EDEFF2; padding: 2rem 0;">
   <div class="container content-wrapper">
-    <h3>💬 Reflection</h3>
+    <h3>Reflection</h3>
     <p>Working in a fast-paced agency setting pushed me to communicate clearly, move quickly, and polish deliverables to a high standard. The project deepened my appreciation for adapting design to meet client constraints while staying user-centered — even on tight timelines.</p>
   </div>
 </div>

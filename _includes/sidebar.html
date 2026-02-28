@@ -1,0 +1,41 @@
+
+<aside class="sidebar">
+
+  <div class="sidebar-header">
+    <a href="/" class="sidebar-brand">KC</a>
+    <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Toggle menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <div class="sidebar-collapsible">
+    <div class="sidebar-photo">
+      <img src="/assets/me.jpg" class="rounded" alt="Katy Chung">
+    </div>
+    <nav class="sidebar-nav">
+      <a href="/" class="sidebar-link{% if page.url == "/" %} active{% endif %}">Home</a>
+      <a href="/projects.html" class="sidebar-link{% if page.url == "/projects.html" or page.url contains "/projects/" %} active{% endif %}">Projects</a>
+      <a href="/photos.html" class="sidebar-link{% if page.url == "/photos.html" or page.url contains "/photos/" %} active{% endif %}">Photo</a>
+      <a href="/notes.html" class="sidebar-link{% if page.url == "/notes.html" or page.collection == "posts" %} active{% endif %}">Notes</a>
+      <a href="/about.html" class="sidebar-link{% if page.url == "/about.html" %} active{% endif %}">About</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <label class="dark-toggle-label" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+        <div class="pill-track"><div class="pill-thumb"></div></div>
+      </label>
+      <div class="sidebar-social mt-3">
+        <a href="http://linkedin.com/in/katychung/" target="_blank">
+          <i class="fa-brands fa-linkedin fa-sm"></i>
+        </a>
+        <a href="http://instagram.com/katyc24" target="_blank">
+          <i class="fa-brands fa-square-instagram fa-sm"></i>
+        </a>
+        <a href="https://www.threads.com/@katyc24/" target="_blank">
+          <i class="fa-brands fa-threads fa-sm"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</aside>

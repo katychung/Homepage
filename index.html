@@ -6,37 +6,17 @@ title: "Home"
 <div class="row py-5 my-5">
     <div class="col-md-12">
         <h1>ハロー<span class="wave-emoji">👋🏼</span> I am <a href="about.html" class="highlight1">Katy</a></h1>
-        <h2 class="pb-5">I like to 
+        <h2 class="pb-2">I like to
             <a href="projects.html" class="highlight2">design</a>, 
             <a href="photos.html" class="highlight3">take photos</a>, 
             <a href="#" class="highlight4" data-image="assets/img/bicycle.jpg">bicycle</a>  
             <a href="#" class="highlight4" data-image="assets/img/surly.jpg">!</a></h2>
         <img id="hoverImage" class="hover-image" src="" alt="Image Preview">
-        <p class="m-0">British-born, Tokyo-based, multi-cultured, polylingual, experience designer.</p>
-<!--         <p class="m-0">Creating measuring results through a user focused approach.</p>
-        <p class="m-0">Balancing customer needs and business goals.</p> -->
-        <!-- <p class="m-0">British-born, multi-cultured, polylingual, Tokyo-based experience designer.</p> -->
-        <!-- <p class="m-0">Currently leading a DX project for the retail industry.</p> -->
-        <p class="m-0">Exploring the intersection of human behavior, design, and digital experiences.</p>
-        <p class="m-0">Previously Goodpatch, Oracle and Vyond.</p>
+        <p class="m-0">British-born, Tokyo-based. Currently working on retail tech.</p>
+        <p class="m-0">Previously Goodpatch · Oracle · Vyond.</p>
     </div>
 </div>
 
-<div class="row py-4">
-    <p class="fs-6 font-monospace"><b>Past Projects・過去のプロジェクト</b></p>{% for project in site.projects %}
-    <div class="col-md-6 my-2">
-      <div class="card"><a href="{{ site.url }}{{ site.baseurl }}{{ project.url }}">
-        <img src="{{ project.teaser-image }}" class="card-img-top" alt="..."></a>
-          <div class="card-body">
-            <!-- <h3 class="card-title">{{ project.description }}</h3> -->
-            <p class="card-text">{{ project.description }}</p>
-                {% for tag in project.tags %}
-                <span class="badge rounded-pill bg-dark">{{ tag }}</span>
-                {% endfor %}
-          </div>
-        </div>
-    </div>{% endfor %}
-</div>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
