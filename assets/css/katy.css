@@ -285,11 +285,10 @@ body.dark-mode .sidebar-social a:hover {
   }
 
   .sidebar-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-auto-flow: column;
-    gap: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 0.75rem;
     padding-top: 0;
     flex: 1;
   }
