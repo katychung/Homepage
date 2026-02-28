@@ -186,7 +186,7 @@ body.dark-mode .sidebar-email:hover {
 
 .main-content .container {
   max-width: 760px;
-  margin-left: auto;
+  margin-left: 2rem;
   margin-right: auto;
 }
 
