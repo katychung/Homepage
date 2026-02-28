@@ -315,6 +315,7 @@ body.dark-mode .sidebar-social a:hover {
 
   .main-content .container {
     max-width: 100%;
+    margin-left: 0;
     padding-left: 1rem;
     padding-right: 1rem;
   }
