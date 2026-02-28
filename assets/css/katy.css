@@ -196,12 +196,12 @@ body.dark-mode .sidebar-email:hover {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #bbb;
+  color: var(--secondary-color);
   margin-bottom: 0;
 }
 
 body.dark-mode .page-label {
-  color: #555;
+  color: var(--secondary-color);
 }
 
 /* Dark mode sidebar */
@@ -658,7 +658,7 @@ body.dark-mode .post-inline h2 {
 /* ─────────── BACK LINK ─────────── */
 .back-link {
   font-size: var(--text-sm);
-  color: #bbb;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -668,7 +668,7 @@ body.dark-mode .post-inline h2 {
 }
 
 body.dark-mode .back-link {
-  color: #555;
+  color: var(--secondary-color);
 }
 
 body.dark-mode .back-link:hover {
