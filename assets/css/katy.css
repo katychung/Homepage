@@ -185,9 +185,9 @@ body.dark-mode .sidebar-email:hover {
 }
 
 .main-content .container {
-  max-width: 700px;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ─────────── PAGE LABEL ─────────── */
@@ -314,8 +314,6 @@ body.dark-mode .sidebar-social a:hover {
   }
 
   .main-content .container {
-    margin-left: 0;
-    margin-right: 0;
     max-width: 100%;
   }
 }
