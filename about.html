@@ -20,6 +20,17 @@ title: "About"
   <div class="col-12 col-md-8">
     <h2 class="page-label mb-4">Contact</h2>
     <form id="contact-form" action="https://formspree.io/f/mdaljenp" method="POST">
+      <div class="mb-4">
+        <p class="page-label mb-2">Reason</p>
+        <div class="contact-reasons">
+          <input type="radio" class="contact-reason-input" name="reason" id="reason-coffee" value="Coffee chat">
+          <label class="contact-reason-label" for="reason-coffee">Coffee chat</label>
+          <input type="radio" class="contact-reason-input" name="reason" id="reason-opportunity" value="Opportunity">
+          <label class="contact-reason-label" for="reason-opportunity">Opportunity</label>
+          <input type="radio" class="contact-reason-input" name="reason" id="reason-password" value="Portfolio password">
+          <label class="contact-reason-label" for="reason-password">Portfolio password</label>
+        </div>
+      </div>
       <div class="mb-3">
         <input type="text" class="form-control contact-input" name="name" placeholder="Name" required>
       </div>
