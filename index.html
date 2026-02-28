@@ -1,34 +1,21 @@
 ---
 layout: default
+title: "Home"
 ---
 
 <div class="row py-5 my-5">
     <div class="col-md-12">
-        <h1>ハロー👋🏼 I am <a href="about.html" class="highlight1">Katy</a></h1>
-        <h2 class="pb-5">I like to 
+        <h1>ハロー<span class="wave-emoji">👋🏼</span> I am <a href="about.html" class="highlight1">Katy</a></h1>
+        <h2 class="pb-2">I like to
             <a href="projects.html" class="highlight2">design</a>, 
             <a href="photos.html" class="highlight3">take photos</a>, 
             <a href="#" class="highlight4" data-image="assets/img/bicycle.jpg">bicycle</a>  
             <a href="#" class="highlight4" data-image="assets/img/surly.jpg">!</a></h2>
         <img id="hoverImage" class="hover-image" src="" alt="Image Preview">
-        <p class="m-0">British-born, multi-cultured, polylingual, Tokyo-based experience designer.</p>
-        <p class="m-0">Currently supporting a DX project for the retail industry.</p>
-        <p class="m-0">Previously Goodpatch, Oracle, Vyond, Ribose and OPX Studio.</p>
+        <p class="m-0">British-born, Tokyo-based. Currently working on retail tech.</p>
+        <p class="m-0">Previously Goodpatch · Oracle · Vyond.</p>
     </div>
 </div>
-<div class="row py-4">
-    <p class="fs-6 font-monospace"><b>Past Projects・過去のプロジェクト</b></p>{% for project in site.projects %}
-    <div class="col-md-6 my-2">
-      <div class="card"><a href="{{ site.url }}{{ site.baseurl }}{{ project.url }}">
-        <img src="{{ project.teaser-image }}" class="card-img-top" alt="..."></a>
-          <div class="card-body">
-            <h5 class="card-title">{{ project.title }} 🔒</h5>
-            <p class="card-text text-truncate">{{ project.description }}</p>
-          </div>
-        </div>
-    </div>{% endfor %}
-</div>
-
 
 
 <script>
