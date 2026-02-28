@@ -304,6 +304,10 @@ body.dark-mode .sidebar-social a:hover {
     display: none;
   }
 
+  .sidebar-bottom .dark-toggle-label::after {
+    display: none;
+  }
+
   .main-content {
     height: auto;
     overflow-y: visible;
