@@ -18,20 +18,20 @@ tags: [Information architecture, Interaction Patterns]
       <img src="/assets/img/ga-screens.png" class="img-fluid rounded" alt="Editing Props in Vyond Studio">
       <figcaption class="figure-caption text-center mt-2">Editing Props in Vyond Studio</figcaption>
     </div>
-    <div class="d-flex gap-5 flex-wrap pt-2">
-      <div>
+    <div class="row g-3 pt-2">
+      <div class="col-6 col-md-auto">
         <p class="page-label mb-1">Role</p>
         <p class="mb-0">Senior UX Designer</p>
       </div>
-      <div>
+      <div class="col-6 col-md-auto">
         <p class="page-label mb-1">Team</p>
         <p class="mb-0">Design, engineering & product</p>
       </div>
-      <div>
+      <div class="col-6 col-md-auto">
         <p class="page-label mb-1">Timeline</p>
         <p class="mb-0">2014 – 2018</p>
       </div>
-      <div>
+      <div class="col-12 col-md-auto">
         <p class="page-label mb-1">Skills</p>
         <span class="project-tag">Information architecture</span>
         <span class="project-tag">Design Systems</span>
