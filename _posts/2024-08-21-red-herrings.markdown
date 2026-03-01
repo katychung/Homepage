@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notes on Red Herrings"
+title:  "Red Herrings in Product Development"
 date:   2024-08-21 09:00:00 +0900
 image: /assets/books/cover.jpg
 description: "Not every problem deserves to be solved."

@@ -65,10 +65,12 @@
         <p class="mt-3" style="font-size: var(--text-sm); color: #bbb;">*<a href="/about.html#contact-form">Request access via the contact form.</a></p>
       </div>
 
-      <div id="bypassMsg" class="container py-5 mt-4" style="display:none;">
-        <p class="page-label mb-3">Access remembered — loading project</p>
-        <div class="bypass-bar-track">
-          <div class="bypass-bar"></div>
+      <div id="bypassMsg" class="bypass-msg-wrap" style="display:none;">
+        <div>
+          <p class="bypass-msg-text mb-3">Access remembered — loading project<span class="bypass-dots"></span></p>
+          <div class="bypass-bar-track">
+            <div class="bypass-bar"></div>
+          </div>
         </div>
       </div>
 
@@ -83,7 +85,7 @@
     document.addEventListener("DOMContentLoaded", function () {
       if (localStorage.getItem('kc_portfolio_access') === 'true') {
         document.getElementById('passwordForm').style.display = 'none';
-        document.getElementById('bypassMsg').style.display = 'block';
+        document.getElementById('bypassMsg').style.display = 'flex';
         setTimeout(function() {
           document.getElementById('bypassMsg').style.display = 'none';
           document.getElementById('content').style.display = 'block';
@@ -100,8 +102,10 @@
           localStorage.setItem('kc_portfolio_access', 'true');
           document.getElementById("content").style.display = "block";
           document.getElementById("passwordForm").style.display = "none";
+          if (typeof gtag !== 'undefined') gtag('event', 'project_unlock', { event_category: 'portfolio', event_label: '{{ page.title }}' });
         } else {
           document.getElementById("passwordError").style.display = "block";
+          if (typeof gtag !== 'undefined') gtag('event', 'project_denied', { event_category: 'portfolio', event_label: '{{ page.title }}' });
         }
       }
     }

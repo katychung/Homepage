@@ -9,3 +9,4 @@ tags: book
 
 ![Image description]({{ page.image }})
 
+Get better at communicating on paper.

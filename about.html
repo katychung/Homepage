@@ -11,7 +11,7 @@ title: "About"
     <h2>Hello — I’m Katy.</h2>
     <p>Born and raised in the UK, I’m a UX Designer with a BSc in Interactive Media Design and years of cross-cultural design experience.</p>
     <p>I’ve worked in London, Hong Kong, Melbourne, and Tokyo — leading UX across tech startups, agencies, and tech giants.</p>
-    <p>I’ve partnered with multidisciplinary teams to research, design, test, and ship products that work for real people — end-to-end, from discovery through to delivery.</p>
+    <p>I’ve worked with multidisciplinary teams to research, design, test, and ship products that work for real people — end-to-end, from discovery through to delivery.</p>
     <p>Living and working across four cities has shaped how I see the world and how I work with others. I speak native English, fluent Cantonese and conversational Japanese (JLPT N2).</p>
   </div>
 </div>
@@ -30,14 +30,13 @@ title: "About"
     <h2 class="page-label mb-4">Contact</h2>
     <form id="contact-form" action="https://formspree.io/f/mdaljenp" method="POST">
       <div class="mb-4">
-        <p class="page-label mb-2">Reason</p>
         <div class="contact-reasons">
           <input type="radio" class="contact-reason-input" name="reason" id="reason-coffee" value="Coffee chat">
           <label class="contact-reason-label" for="reason-coffee">Coffee chat</label>
           <input type="radio" class="contact-reason-input" name="reason" id="reason-opportunity" value="Opportunity">
           <label class="contact-reason-label" for="reason-opportunity">Opportunity</label>
-          <input type="radio" class="contact-reason-input" name="reason" id="reason-password" value="Portfolio password">
-          <label class="contact-reason-label" for="reason-password">Portfolio password</label>
+          <input type="radio" class="contact-reason-input" name="reason" id="reason-password" value="Portfolio access">
+          <label class="contact-reason-label" for="reason-password">Portfolio access</label>
           <input type="radio" class="contact-reason-input" name="reason" id="reason-other" value="Other">
           <label class="contact-reason-label" for="reason-other">Other</label>
         </div>
@@ -70,6 +69,7 @@ title: "About"
         form.reset();
         form.querySelector(‘.contact-success’).style.display = ‘block’;
         form.querySelector(‘.contact-btn’).style.display = ‘none’;
+        if (typeof gtag !== ‘undefined’) gtag(‘event’, ‘form_submit’, { event_category: ‘contact’ });
       }
     });
   });
