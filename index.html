@@ -3,41 +3,52 @@ layout: default
 title: "Home"
 ---
 
-<div class="row py-5 my-5">
-    <div class="col-md-12">
-        <h1>ハロー<span class="wave-emoji">👋🏼</span> I am <a href="about.html" class="highlight1">Katy</a></h1>
-        <h2 class="pb-2">I like to
-            <a href="projects.html" class="highlight2">design</a>, 
-            <a href="photos.html" class="highlight3">take photos</a>, 
-            <a href="#" class="highlight4" data-image="assets/img/bicycle.jpg">bicycle</a>  
-            <a href="#" class="highlight4" data-image="assets/img/surly.jpg">!</a></h2>
-        <img id="hoverImage" class="hover-image" src="" alt="Image Preview">
-        <p class="m-0">British-born, Tokyo-based. Currently working on retail tech.</p>
-        <p class="m-0">Previously Goodpatch · Oracle · Vyond.</p>
-    </div>
+<style>
+.fd   { font-family: 'Fraunces', serif; font-weight: 900; font-variation-settings: 'opsz' 144, 'WONK' 0; }
+.mono { font-family: 'Courier New', Courier, monospace; }
+.prompt::before { content: '❯ '; opacity: 0.28; }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+.cur::after { content: '█'; animation: blink 1s step-end infinite; }
+
+.home-g      { padding: 3rem 0; }
+.g-greeting  { font-size: 0.82rem; margin-bottom: 0.4rem; }
+.g-greeting span:not(.wave-emoji) { opacity: 0.4; }
+.g-name      { font-size: 3.5rem; line-height: 1; margin-bottom: 0.6rem; }
+.g-rule      { border: none; border-top: 1px solid currentColor; opacity: 0.12; margin: 0 0 0.6rem; }
+.g-term      { font-size: 0.9rem; line-height: 1.8; }
+
+.g-term a {
+  color: inherit;
+  background: none !important;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  padding: 0;
+}
+.g-term a:hover { opacity: 0.6; color: inherit !important; text-shadow: none !important; background: none !important; cursor: pointer; }
+</style>
+
+<div class="home-g">
+  <div class="mono g-greeting"><span>❯ こんにちわ</span> <span class="wave-emoji">👋🏼</span></div>
+  <div class="fd g-name">Katy</div>
+  <hr class="g-rule">
+  <div class="g-term mono">
+    <div class="prompt"><a href="projects.html">Design</a>, <a href="photos.html">photography</a>, <a href="#" class="highlight4" data-image="assets/img/bicycle.jpg">bicycle</a>, jump rope, eyewear</div>
+    <div class="prompt">UX Designer · Tokyo · Retail Tech</div>
+    <div class="prompt" style="opacity:0.42;">Goodpatch · Oracle · Vyond<span class="cur"></span></div>
+  </div>
 </div>
 
+<img id="hoverImage" class="hover-image" src="" alt="Image Preview">
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const links = document.querySelectorAll('.highlight4');
-        const hoverImage = document.getElementById('hoverImage');
-
-        links.forEach(link => {
-            link.addEventListener('mouseover', function(event) {
-                const imageUrl = link.getAttribute('data-image');
-                hoverImage.src = imageUrl;
-                hoverImage.style.display = 'block';
-            });
-
-            link.addEventListener('mousemove', function(event) {
-                hoverImage.style.left = event.pageX + 10 + 'px'; // Adjust 10px offset as needed
-                hoverImage.style.top = event.pageY + 10 + 'px'; // Adjust 10px offset as needed
-            });
-
-            link.addEventListener('mouseout', function() {
-                hoverImage.style.display = 'none';
-            });
-        });
-    });
+document.addEventListener('DOMContentLoaded', function () {
+  const hoverImage = document.getElementById('hoverImage');
+  document.querySelectorAll('.highlight4').forEach(link => {
+    link.addEventListener('mouseover', () => { hoverImage.src = link.getAttribute('data-image'); hoverImage.style.display = 'block'; });
+    link.addEventListener('mousemove', e => { hoverImage.style.left = e.pageX + 10 + 'px'; hoverImage.style.top = e.pageY + 10 + 'px'; });
+    link.addEventListener('mouseout', () => { hoverImage.style.display = 'none'; });
+  });
+});
 </script>

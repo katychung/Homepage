@@ -620,6 +620,84 @@ img.img-fluid.rounded {
   box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* ─────────── HOME INTRO ─────────── */
+.intro-greeting {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.55;
+  letter-spacing: 0.01em;
+}
+
+.home-intro h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 4.25rem;
+  font-weight: 900;
+  font-style: italic;
+  font-variation-settings: 'opsz' 144, 'WONK' 0;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.home-intro h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* Drop colored backgrounds; underline only */
+.home-intro h1 a,
+.home-intro .highlight2,
+.home-intro .highlight3,
+.home-intro .highlight4 {
+  background: none;
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.home-intro h1 a:hover,
+.home-intro .highlight2:hover,
+.home-intro .highlight3:hover {
+  background: none;
+  color: var(--primary-color);
+  text-shadow: none;
+}
+
+.home-intro .highlight4:hover {
+  background: none;
+  color: var(--primary-color);
+  text-shadow: none;
+  cursor: default;
+}
+
+body.dark-mode .home-intro h1 a,
+body.dark-mode .home-intro .highlight2,
+body.dark-mode .home-intro .highlight3,
+body.dark-mode .home-intro .highlight4 {
+  background: none;
+  color: #d8d8d8;
+}
+
+body.dark-mode .home-intro h1 a:hover,
+body.dark-mode .home-intro .highlight2:hover,
+body.dark-mode .home-intro .highlight3:hover,
+body.dark-mode .home-intro .highlight4:hover {
+  color: #d8d8d8;
+  text-shadow: none;
+}
+
+.home-intro .intro-bio {
+  opacity: 0.5;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .home-intro h1 { font-size: 2.75rem; }
+  .home-intro h2 { font-size: 1.2rem; }
+}
+
 /* ─────────── ANIMATIONS ─────────── */
 @keyframes wave {
   0%   { transform: rotate(0deg); }
