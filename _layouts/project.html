@@ -55,16 +55,17 @@
       <div id="passwordForm" class="container py-5 mt-4">
         <p class="page-label mb-3">Password required</p>
         <input
-          type="password"
+          type="text"
           id="password"
           placeholder="Enter password"
           class="contact-input d-block mb-3"
-          style="max-width: 320px;"
+          style="max-width: 320px; -webkit-text-security: disc;"
+          autocomplete="off"
           onkeypress="checkPassword(event)"
         />
         <button class="btn contact-btn" onclick="checkPassword(event)">Submit</button>
         <p id="passwordError" class="contact-success mt-3" style="display:none;">Incorrect password — <a href="/about.html#contact-form">request access via the contact form.</a></p>
-        <p class="mt-3" style="font-size: var(--text-sm); color: #bbb;">*<a href="/about.html#contact-form">Request access via the contact form.</a></p>
+        <p class="mt-3" style="font-size: var(--text-sm); color: rgba(33,37,41,0.45);">Don't have the password? <a href="/about.html#contact-form" style="color: inherit; text-decoration-color: inherit;">Request access.</a></p>
       </div>
 
       <div id="bypassMsg" class="bypass-msg-wrap" style="display:none;">

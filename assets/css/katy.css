@@ -414,21 +414,26 @@ a:hover {
 
 /* ─────────── CONTACT FORM ─────────── */
 .contact-input {
-  border: none;
-  border-bottom: 1px solid rgba(0,0,0,0.15);
+  -webkit-appearance: none;
+  appearance: none;
+  border: none !important;
+  border-bottom: 1px solid rgba(0,0,0,0.15) !important;
   border-radius: 0;
   padding-left: 0.25rem;
   padding-right: 0;
   background: transparent;
   font-size: var(--text-sm);
   color: var(--primary-color);
-  box-shadow: none;
+  box-shadow: none !important;
+  outline: none !important;
 }
 
-.contact-input:focus {
+.contact-input:focus,
+.contact-input:focus-visible {
   border-bottom-color: var(--primary-color);
   background: transparent;
   box-shadow: none;
+  outline: none;
   color: var(--primary-color);
 }
 
@@ -511,11 +516,16 @@ body.dark-mode .contact-reason-input:checked + .contact-reason-label {
 body.dark-mode .contact-input {
   border-bottom-color: #444;
   color: #d8d8d8;
+  background-color: #121212;
 }
 
-body.dark-mode .contact-input:focus {
+body.dark-mode .contact-input:focus,
+body.dark-mode .contact-input:focus-visible {
   border-bottom-color: #d8d8d8;
   color: #d8d8d8;
+  outline: none;
+  box-shadow: none;
+  background-color: #121212;
 }
 
 body.dark-mode .contact-input::placeholder {
@@ -739,12 +749,7 @@ body.dark-mode .post-inline h2 {
 
 /* ─────────── BACK LINK ─────────── */
 .back-link-wrap {
-  background-color: #EDEFF2;
   padding: 1.5rem 0 0;
-}
-
-body.dark-mode .back-link-wrap {
-  background-color: #161616;
 }
 
 .back-link {
