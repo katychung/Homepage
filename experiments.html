@@ -1,0 +1,377 @@
+---
+layout: default
+title: "Experiments"
+---
+
+<style>
+.options-preview { padding: 1.5rem 0 3rem; }
+.option {
+  padding: 1.75rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+body.dark-mode .option { border-bottom-color: rgba(255,255,255,0.05); }
+.option-num {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.22;
+  margin-bottom: 0.6rem;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.opt2-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(4rem, 16vw, 9rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.88;
+  text-transform: uppercase;
+}
+.opt2-meta {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.72rem;
+  opacity: 0.38;
+  margin-top: 0.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.opt3-table {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.15rem 1.5rem;
+  font-size: 0.85rem;
+  max-width: 420px;
+  align-items: baseline;
+}
+.opt3-label { opacity: 0.3; white-space: nowrap; }
+.opt3-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-variation-settings: 'opsz' 144, 'WONK' 0;
+  font-size: 2.75rem;
+  line-height: 1;
+  grid-column: 1 / -1;
+  margin-bottom: 0.5rem;
+}
+.opt4-wrap {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+.opt4-prompt::before { content: '❯ '; opacity: 0.3; }
+.opt4-cursor::after {
+  content: '█';
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+.opt5-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-style: italic;
+  font-variation-settings: 'opsz' 144, 'WONK' 0;
+  font-size: 4rem;
+  line-height: 1.05;
+}
+.redacted {
+  background: currentColor;
+  color: transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  padding: 0 2px;
+}
+.redacted:hover { background: transparent; color: inherit; }
+.opt6-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-style: italic;
+  font-variation-settings: 'opsz' 144, 'WONK' 0;
+  font-size: 4rem;
+  line-height: 1.05;
+}
+.scramble-target { display: inline-block; cursor: crosshair; }
+.opt7-wrap { display: flex; align-items: flex-start; gap: 1.25rem; }
+.opt7-vert {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 0.7rem;
+  opacity: 0.32;
+  letter-spacing: 0.12em;
+  flex-shrink: 0;
+  padding-top: 0.25rem;
+  text-transform: uppercase;
+}
+.opt7-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-style: italic;
+  font-variation-settings: 'opsz' 144, 'WONK' 0;
+  font-size: 4rem;
+  line-height: 1.05;
+  margin: 0;
+}
+.opt8-wrap { position: relative; overflow: hidden; min-height: 4rem; }
+.opt8-ghost {
+  position: absolute;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: clamp(5rem, 20vw, 10rem);
+  letter-spacing: -0.05em;
+  line-height: 1;
+  text-transform: uppercase;
+  opacity: 0.055;
+  top: -0.2em; left: -0.04em;
+  pointer-events: none; user-select: none;
+}
+body.dark-mode .opt8-ghost { opacity: 0.09; }
+.opt8-content { position: relative; }
+.opt8-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-style: italic;
+  font-variation-settings: 'opsz' 144, 'WONK' 0;
+  font-size: 3rem;
+  line-height: 1.05;
+  margin: 0;
+}
+.opt9-cross { font-size: 0.9rem; text-decoration: line-through; opacity: 0.28; margin: 0 0 0.1rem; }
+.opt9-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-style: italic;
+  font-variation-settings: 'opsz' 144, 'WONK' 0;
+  font-size: 4rem;
+  line-height: 1;
+  margin: 0;
+}
+.opt10-line { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 0.5rem; line-height: 1.3; }
+.opt10-name {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-style: italic;
+  font-variation-settings: 'opsz' 144, 'WONK' 0;
+  font-size: 3rem;
+  line-height: 1;
+}
+.opt10-sep { opacity: 0.18; font-size: 1.5rem; }
+.opt10-rest { font-size: 1rem; }
+.opt10-small { font-size: 0.8rem; opacity: 0.38; margin-top: 0.3rem; }
+</style>
+
+<style>
+/* ── round 2 shared ── */
+.fd2  { font-family: 'Fraunces', serif; font-weight: 900; font-variation-settings: 'opsz' 144, 'WONK' 0; }
+.fdi2 { font-family: 'Fraunces', serif; font-weight: 900; font-style: italic; font-variation-settings: 'opsz' 144, 'WONK' 0; }
+.lbl2 { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.3; }
+.mono2 { font-family: 'Courier New', Courier, monospace; }
+.prompt2::before { content: '❯ '; opacity: 0.28; }
+/* ── A ── */
+.a-greeting { font-size: 0.82rem; opacity: 0.4; margin-bottom: 0.25rem; font-family: 'Courier New', Courier, monospace; }
+.a-name  { font-size: 3.5rem; line-height: 1; margin-bottom: 0.6rem; }
+.a-rule  { border: none; border-top: 1px solid currentColor; opacity: 0.12; margin: 0 0 0.6rem; }
+.a-table { display: grid; grid-template-columns: max-content 1fr; gap: 0.2rem 1.5rem; font-size: 0.85rem; max-width: 400px; }
+.a-table a { color: inherit; background: none !important; text-decoration: underline dotted; text-underline-offset: 3px; text-decoration-thickness: 1px; padding: 0; }
+/* ── C ── */
+.c-name  { font-size: 4.25rem; line-height: 1.05; letter-spacing: -0.02em; margin: 0.15rem 0 0.5rem; }
+.c-term  { font-size: 0.85rem; line-height: 1.75; }
+/* ── F+ ── */
+.fp-wrap { display: flex; align-items: stretch; gap: 0; }
+.fp-vert-col { padding-right: 1.25rem; margin-right: 1.5rem; border-right: 1px solid rgba(0,0,0,0.1); display: flex; align-items: center; flex-shrink: 0; }
+body.dark-mode .fp-vert-col { border-right-color: rgba(255,255,255,0.08); }
+.fp-vert { writing-mode: vertical-rl; font-size: 0.72rem; opacity: 0.38; letter-spacing: 0.12em; text-transform: uppercase; }
+.fp-name  { font-size: 3.5rem; line-height: 1; margin-bottom: 0.6rem; }
+.fp-table { display: grid; grid-template-columns: max-content 1fr; gap: 0.2rem 1.25rem; font-size: 0.85rem; }
+</style>
+
+<p style="font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;opacity:0.3;margin-bottom:2rem;font-family:'Space Grotesk',sans-serif;">Archived experiments — round 2</p>
+
+<div class="options-preview">
+
+  <!-- A — data + rule -->
+  <div class="option">
+    <div class="option-num">A — Data + rule</div>
+    <div class="a-greeting">❯ こんにちわ 👋🏼</div>
+    <div class="fd2 a-name">Katy</div>
+    <hr class="a-rule">
+    <div class="a-table">
+      <span class="lbl2">Role</span><span>UX Designer</span>
+      <span class="lbl2">At</span><span>Retail tech</span>
+      <span class="lbl2">Base</span><span>British-born, Tokyo</span>
+      <span class="lbl2">Prev.</span><span>Goodpatch · Oracle · Vyond</span>
+      <span class="lbl2">Loves</span><span><a href="projects.html">Design</a> · <a href="photos.html">Photos</a> · <a href="#" class="highlight4" data-image="assets/img/bicycle.jpg">Bicycle</a> · Eyewear</span>
+    </div>
+  </div>
+
+  <!-- C — terminal + display name -->
+  <div class="option">
+    <div class="option-num">C — Terminal + display name</div>
+    <div class="mono2 prompt2" style="font-size:0.85rem;opacity:0.5;margin-bottom:0.1rem;">こんにちわ 👋🏼</div>
+    <div class="fdi2 c-name">I am Katy</div>
+    <div class="c-term mono2">
+      <div class="prompt2">design · take photos · bicycle</div>
+      <div class="prompt2" style="opacity:0.45;">british-born · tokyo · retail tech · goodpatch · oracle · vyond</div>
+    </div>
+  </div>
+
+  <!-- F+ — vertical + data -->
+  <div class="option">
+    <div class="option-num">F+ — Vertical + data</div>
+    <div class="fp-wrap">
+      <div class="fp-vert-col">
+        <div class="fp-vert">こんにちわ 👋🏼</div>
+      </div>
+      <div>
+        <div class="fdi2 fp-name">Katy</div>
+        <div class="fp-table">
+          <span class="lbl2">Role</span><span>UX Designer</span>
+          <span class="lbl2">At</span><span>Retail tech</span>
+          <span class="lbl2">Base</span><span>British-born, Tokyo</span>
+          <span class="lbl2">Prev.</span><span>Goodpatch · Oracle · Vyond</span>
+          <span class="lbl2">Loves</span><span>Design · Photos · Bicycle</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p style="font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;opacity:0.3;margin-bottom:2rem;margin-top:3rem;font-family:'Space Grotesk',sans-serif;">Archived experiments — round 1</p>
+
+<div class="options-preview">
+
+  <div class="option">
+    <div class="option-num">01 — Fraunces italic</div>
+    <div class="home-intro">
+      <p class="intro-greeting mb-0">こんにちわ<span class="wave-emoji">👋🏼</span></p>
+      <h1>I am <a href="about.html">Katy</a></h1>
+      <h2 class="pb-1">I like to
+        <a href="projects.html" class="highlight2">design</a>,
+        <a href="photos.html" class="highlight3">take photos</a>,
+        <a href="#" class="highlight4" data-image="assets/img/bicycle.jpg">bicycle</a>
+        <a href="#" class="highlight4" data-image="assets/img/surly.jpg">!</a></h2>
+      <p class="m-0 intro-bio">British-born, Tokyo-based. Currently working on retail tech.<br>Previously Goodpatch · Oracle · Vyond.</p>
+    </div>
+  </div>
+
+  <div class="option">
+    <div class="option-num">02 — Huge</div>
+    <div class="opt2-name">Katy</div>
+    <div class="opt2-meta">
+      <span>UX Designer</span><span>Tokyo</span><span>Design · Photos · Bicycle</span>
+    </div>
+  </div>
+
+  <div class="option">
+    <div class="option-num">03 — Data</div>
+    <div class="opt3-table">
+      <div class="opt3-title">Katy</div>
+      <div class="opt3-label">Role</div><div>UX Designer</div>
+      <div class="opt3-label">Base</div><div>British-born, Tokyo</div>
+      <div class="opt3-label">At</div><div>Retail tech</div>
+      <div class="opt3-label">Prev.</div><div>Goodpatch · Oracle · Vyond</div>
+      <div class="opt3-label">Loves</div><div>Design, photos, bicycle</div>
+    </div>
+  </div>
+
+  <div class="option">
+    <div class="option-num">04 — Terminal</div>
+    <div class="opt4-wrap">
+      <div class="opt4-prompt">こんにちわ 👋🏼</div>
+      <div class="opt4-prompt">I am Katy<span class="opt4-cursor"></span></div>
+      <div class="opt4-prompt">Design · Photos · Bicycle · Tokyo</div>
+      <div class="opt4-prompt" style="opacity:0.42;">Retail tech · Goodpatch · Oracle · Vyond</div>
+    </div>
+  </div>
+
+  <div class="option">
+    <div class="option-num">05 — Redacted</div>
+    <div class="opt5-title">I am <span class="redacted">Katy</span></div>
+    <div style="font-size:1.3rem;margin-top:0.2rem;">I like to design, take photos, bicycle</div>
+    <div style="font-size:0.875rem;opacity:0.5;margin-top:0.25rem;line-height:1.5;">British-born, Tokyo-based.<br>Retail tech · Goodpatch · Oracle · Vyond.</div>
+  </div>
+
+  <div class="option">
+    <div class="option-num">06 — Scramble</div>
+    <p style="font-size:0.85rem;opacity:0.42;margin-bottom:0.2rem;">こんにちわ 👋🏼</p>
+    <div class="opt6-title">I am <span class="scramble-target" data-text="Katy">Katy</span></div>
+    <div style="font-size:1.3rem;margin-top:0.2rem;">I like to design, take photos, bicycle</div>
+    <div style="font-size:0.875rem;opacity:0.5;margin-top:0.25rem;line-height:1.5;">British-born, Tokyo-based · Retail tech.</div>
+  </div>
+
+  <div class="option">
+    <div class="option-num">07 — Vertical</div>
+    <div class="opt7-wrap">
+      <div class="opt7-vert">こんにちわ 👋🏼</div>
+      <div>
+        <div class="opt7-title">I am Katy</div>
+        <div style="font-size:1.3rem;margin-top:0.2rem;">I like to design, take photos, bicycle</div>
+        <div style="font-size:0.875rem;opacity:0.5;margin-top:0.25rem;line-height:1.5;">British-born, Tokyo-based · Retail tech<br>Goodpatch · Oracle · Vyond</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option">
+    <div class="option-num">08 — Watermark</div>
+    <div class="opt8-wrap">
+      <div class="opt8-ghost">KATY</div>
+      <div class="opt8-content">
+        <p style="font-size:0.85rem;opacity:0.42;margin-bottom:0.15rem;">こんにちわ 👋🏼</p>
+        <div class="opt8-title">I am Katy</div>
+        <div style="font-size:1.1rem;margin-top:0.2rem;">I like to design, take photos, bicycle</div>
+        <div style="font-size:0.8rem;opacity:0.4;margin-top:0.25rem;">British-born, Tokyo · Retail tech · Goodpatch · Oracle · Vyond</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option">
+    <div class="option-num">09 — Crossed out</div>
+    <p style="font-size:0.85rem;opacity:0.42;margin-bottom:0.15rem;">こんにちわ 👋🏼</p>
+    <p class="opt9-cross">Nobody in particular.</p>
+    <div class="opt9-title">Katy.</div>
+    <div style="font-size:0.875rem;opacity:0.5;margin-top:0.35rem;line-height:1.5;">British-born, Tokyo-based · Design, photos, bicycle<br>Retail tech · Goodpatch · Oracle · Vyond</div>
+  </div>
+
+  <div class="option">
+    <div class="option-num">10 — One-liner</div>
+    <div class="opt10-line">
+      <span class="opt10-name">Katy</span>
+      <span class="opt10-sep">/</span>
+      <span class="opt10-rest">UX Designer</span>
+      <span class="opt10-sep">/</span>
+      <span class="opt10-rest">Tokyo</span>
+      <span class="opt10-sep">/</span>
+      <span class="opt10-rest">design · photos · bicycle</span>
+    </div>
+    <div class="opt10-small">British-born · Retail tech · Goodpatch · Oracle · Vyond</div>
+  </div>
+
+</div>
+
+<img id="hoverImage" class="hover-image" src="" alt="Image Preview">
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const hoverImage = document.getElementById('hoverImage');
+  document.querySelectorAll('.highlight4').forEach(link => {
+    link.addEventListener('mouseover', () => { hoverImage.src = link.getAttribute('data-image'); hoverImage.style.display = 'block'; });
+    link.addEventListener('mousemove', e => { hoverImage.style.left = e.pageX + 10 + 'px'; hoverImage.style.top = e.pageY + 10 + 'px'; });
+    link.addEventListener('mouseout', () => { hoverImage.style.display = 'none'; });
+  });
+  const scrambleEl = document.querySelector('.scramble-target');
+  if (scrambleEl) {
+    const original = scrambleEl.dataset.text;
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!?#@';
+    let interval;
+    scrambleEl.addEventListener('mouseenter', () => {
+      let iter = 0; clearInterval(interval);
+      interval = setInterval(() => {
+        scrambleEl.textContent = original.split('').map((c, i) => i < iter ? original[i] : chars[Math.floor(Math.random() * chars.length)]).join('');
+        if (iter >= original.length) clearInterval(interval);
+        iter += 0.35;
+      }, 40);
+    });
+    scrambleEl.addEventListener('mouseleave', () => { clearInterval(interval); scrambleEl.textContent = original; });
+  }
+});
+</script>

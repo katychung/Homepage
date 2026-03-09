@@ -20,10 +20,26 @@ title: "Projects"
           <div class="card-body">
             <h5 class="card-title">{{ project.title }} <i class="fa-solid fa-lock fa-xs card-lock"></i></h5>
             <p class="card-text text-truncate">{{ project.description }}</p>
-            {% for tag in project.tags %}
-            <span class="project-tag">{{ tag }}</span>
-            {% endfor %}
+            <p class="card-tags">{{ project.tags | join: " · " }}</p>
           </div>
         </div>
     </div>{% endfor %}
+</div>
+
+<div class="row pt-5 pb-2">
+  <hr class="other-work-rule">
+  <h2 class="page-label mb-0">Other work</h2>
+</div>
+
+<div class="row pt-3 pb-5">
+  <div class="col-md-6 mb-4">
+    <p class="other-work-title">Goodpatch — Mobile App Design</p>
+    <p class="card-tags">Wireframing · Prototyping · iOS/Android</p>
+    <p class="other-work-desc">Designed mobile app for major Japanese entertainment brand's new store concept. Wireframed and prototyped core flows under tight brand/IP guidelines for iOS and Android launch.</p>
+  </div>
+  <div class="col-md-6 mb-4">
+    <p class="other-work-title">Oracle — Construction Document Automation</p>
+    <p class="card-tags">Workflow Design · OCR · Document Automation</p>
+    <p class="other-work-desc">Designed automated document processing workflows using OCR to automatically label construction documents and drawings, reducing manual tagging for document controllers and field teams.</p>
+  </div>
 </div>
