@@ -12,7 +12,10 @@ tags: [Information architecture, Interaction patterns, User research]
 <!-- Hero Section -->
 <div class="full-width-section" style="background-color: #EDEFF2;">
   <div class="container">
-    <h1>{{ page.title }}</h1>
+    <div class="d-flex justify-content-between align-items-baseline">
+      <h1>{{ page.title }}</h1>
+      <a href="/projects/ga-ja.html" class="lang-switch-link">日本語版</a>
+    </div>
     <p>{{ page.description }}</p>
     <div class="py-4">
       <img src="/assets/img/ga-screens.png" class="img-fluid rounded" alt="Editing Props in Vyond Studio">

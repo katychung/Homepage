@@ -46,7 +46,7 @@
     {% include sidebar.html %}
     <main class="main-content">
 
-      <div class="back-link-wrap">
+      <div id="backLinkWrap" class="back-link-wrap" style="display:none;">
         <div class="container">
           <a href="/projects.html" class="back-link">← Back to all projects</a>
         </div>
@@ -91,6 +91,7 @@
         document.getElementById('bypassMsg').style.display = 'flex';
         setTimeout(function() {
           document.getElementById('bypassMsg').style.display = 'none';
+          document.getElementById('backLinkWrap').style.display = 'block';
           document.getElementById('content').style.display = 'block';
         }, 1800);
       } else {
@@ -103,6 +104,7 @@
         var password = document.getElementById("password").value;
         if (password === "kaki") {
           localStorage.setItem('kc_portfolio_access', 'true');
+          document.getElementById("backLinkWrap").style.display = 'block';
           document.getElementById("content").style.display = "block";
           document.getElementById("passwordForm").style.display = "none";
           if (typeof gtag !== 'undefined') gtag('event', 'project_unlock', { event_category: 'portfolio', event_label: '{{ page.title }}' });

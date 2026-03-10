@@ -13,7 +13,7 @@ title: "Projects"
   </div>
 </div>
 
-<div class="row py-2">{% for project in site.projects %}
+<div class="row py-2">{% for project in site.projects %}{% unless project.lang == "ja" %}
     <div class="col-md-6">
       <div class="card my-4"><a href="{{ site.url }}{{ site.baseurl }}{{ project.url }}">
         <img src="{{ project.teaser-image }}" class="card-img-top" alt="..."></a>
@@ -23,7 +23,7 @@ title: "Projects"
             <p class="card-tags">{{ project.tags | join: " · " }}</p>
           </div>
         </div>
-    </div>{% endfor %}
+    </div>{% endunless %}{% endfor %}
 </div>
 
 <div class="row pt-5 pb-2">

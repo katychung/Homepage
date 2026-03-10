@@ -11,7 +11,10 @@ tags: [Journey Mapping, Stakeholder Research, Systems Thinking, Strategic Priori
 <!-- Hero Section -->
 <div class="full-width-section" style="background-color: #EDEFF2;">
   <div class="container">
-    <h1>{{ page.title }}</h1>
+    <div class="d-flex justify-content-between align-items-baseline">
+      <h1>{{ page.title }}</h1>
+      <a href="/projects/retail-ja.html" class="lang-switch-link">日本語版</a>
+    </div>
     <p>{{ page.description }}</p>
     <div class="py-4">
       <img src="/assets/img/retail-op-map.png" class="img-fluid rounded" alt="Client onboarding journey map">
