@@ -18,7 +18,7 @@ lang: ja
     </div>
     <p>{{ page.description }}</p>
     <div class="py-4">
-      <img src="/assets/img/retail-op-map.png" class="img-fluid rounded" alt="クライアントオンボーディングジャーニーマップ">
+      <img src="/assets/img/retail-dashboard.png" class="img-fluid rounded" alt="クライアントオンボーディングジャーニーマップ">
     </div>
     <hr class="project-meta-rule">
     <div class="project-meta-grid">
@@ -36,7 +36,7 @@ lang: ja
       </div>
       <div>
         <div class="meta-label">スキル</div>
-        <p class="meta-value meta-skills">ジャーニーマッピング · ステークホルダーリサーチ · システム思考 · 戦略的優先順位付け</p>
+        <p class="meta-value meta-skills">ジャーニーマッピング · ステークホルダーリサーチ · 戦略</p>
       </div>
     </div>
   </div>
@@ -86,7 +86,7 @@ lang: ja
     <p>私はセールス、オペレーション、エンジニアリング、リーダーシップにインタビューを行い、理想ではなく実際のオンボーディングプロセスをマッピングしました。</p>
     <ol>
       <li>契約前からゴーライブまでのクライアントジャーニーの大まかな全体像をマッピング</li>
-      <li>各ステークホルダーと個別に確認：<em>これは正確ですか？</em></li>
+      <li>各ステークホルダーとジャーニーマップの認識を合わせる：<em>このマップは実態を正確に捉えていますか？</em></li>
       <li>ギャップ、ペインポイント、依存関係を特定</li>
       <li>情報がどこで収集されているか（あるいはされていないか）を分析</li>
       <li>ビジネスインパクトと実現可能性に基づいて修正点を優先順位付け</li>

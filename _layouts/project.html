@@ -59,18 +59,19 @@
           </div>
           <p class="page-label mb-1">Access required</p>
           <p class="password-screen-sub mb-4">This project is password protected.</p>
-          <input
-            type="text"
-            id="password"
-            placeholder="Enter password"
-            class="contact-input d-block mb-3 w-100"
-            style="-webkit-text-security: disc;"
-            autocomplete="off"
-            onkeypress="checkPassword(event)"
-          />
-          <button class="btn contact-btn w-100" onclick="checkPassword(event)">Submit</button>
-          <p id="passwordError" class="password-screen-error mt-3" style="display:none;">Incorrect password — <a href="/about.html#contact-form">request access.</a></p>
-          <p class="password-screen-footnote mt-4">Don't have the password? <a href="/about.html#contact-form">Request access.</a></p>
+          <form onsubmit="checkPassword(event)">
+            <input
+              type="text"
+              id="password"
+              placeholder="Enter password"
+              class="contact-input d-block mb-3 w-100"
+              style="-webkit-text-security: disc;"
+              autocomplete="off"
+            />
+            <button type="submit" class="btn contact-btn w-100">Submit</button>
+          </form>
+          <p id="passwordError" class="password-screen-error mt-3" style="display:none;">Incorrect password — <a href="/contact.html">request access.</a></p>
+          <p class="password-screen-footnote mt-4">Don't have the password? <a href="/contact.html">Request access.</a></p>
         </div>
       </div>
 
@@ -115,19 +116,18 @@
     });
 
     function checkPassword(event) {
-      if (event.keyCode === 13 || event.type === "click") {
-        var password = document.getElementById("password").value;
-        if (password === "kaki") {
-          localStorage.setItem('kc_portfolio_access', 'true');
-          sessionStorage.setItem('kc_unlocked', 'true');
-          document.getElementById("backLinkWrap").style.display = 'block';
-          document.getElementById("content").style.display = "block";
-          document.getElementById("passwordForm").style.display = "none";
-          if (typeof gtag !== 'undefined') gtag('event', 'project_unlock', { event_category: 'portfolio', event_label: '{{ page.title }}' });
-        } else {
-          document.getElementById("passwordError").style.display = "block";
-          if (typeof gtag !== 'undefined') gtag('event', 'project_denied', { event_category: 'portfolio', event_label: '{{ page.title }}' });
-        }
+      event.preventDefault();
+      var password = document.getElementById("password").value;
+      if (password === "kaki") {
+        localStorage.setItem('kc_portfolio_access', 'true');
+        sessionStorage.setItem('kc_unlocked', 'true');
+        document.getElementById("backLinkWrap").style.display = 'block';
+        document.getElementById("content").style.display = "block";
+        document.getElementById("passwordForm").style.display = "none";
+        if (typeof gtag !== 'undefined') gtag('event', 'project_unlock', { event_category: 'portfolio', event_label: '{{ page.title }}' });
+      } else {
+        document.getElementById("passwordError").style.display = "block";
+        if (typeof gtag !== 'undefined') gtag('event', 'project_denied', { event_category: 'portfolio', event_label: '{{ page.title }}' });
       }
     }
   </script>

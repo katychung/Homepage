@@ -213,9 +213,6 @@ body.dark-mode .page-label {
   .project-meta-grid {
     grid-template-columns: auto auto auto 1fr;
   }
-  .project-meta-grid > div:last-child {
-    grid-column: auto;
-  }
 }
 
 .meta-label {
