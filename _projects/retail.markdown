@@ -4,8 +4,8 @@ title: "Mapping Client Onboarding to Enable Scale"
 date: 2001-05-01 00:00:00
 project-date: "2023"
 description: "Surfacing the systemic gaps blocking automation and self-service growth through stakeholder interviews and journey mapping."
-teaser-image: assets/img/retail-op-map.png
-tags: [Journey Mapping, Stakeholder Research, Systems Thinking, Strategic Prioritisation]
+teaser-image: assets/img/retail-dashboard.png
+tags: [Journey Mapping, Stakeholder Research, Strategy]
 ---
 
 <!-- Hero Section -->
@@ -17,7 +17,7 @@ tags: [Journey Mapping, Stakeholder Research, Systems Thinking, Strategic Priori
     </div>
     <p>{{ page.description }}</p>
     <div class="py-4">
-      <img src="/assets/img/retail-op-map.png" class="img-fluid rounded" alt="Client onboarding journey map">
+      <img src="/assets/img/retail-dashboard.png" class="img-fluid rounded" alt="Client onboarding journey map">
     </div>
     <hr class="project-meta-rule">
     <div class="project-meta-grid">
@@ -81,6 +81,7 @@ tags: [Journey Mapping, Stakeholder Research, Systems Thinking, Strategic Priori
 <div class="full-width-section" style="background-color: #EDEFF2; padding: 4rem 0;">
   <div class="container">
     <h3 class="page-label mb-3">Approach</h3>
+    <p>Flow Solutions was pivoting from hardware revenue to SaaS platform revenue, but client onboarding was still built for a hardware-first world. Long lead times, manual processes at every stage, and no clear end-to-end owner made it impossible to scale.</p>
     <p>I interviewed sales, operations, engineering, and leadership to map the actual onboarding process—not the ideal one.</p>
     <ol>
       <li>Mapped a rough understanding of the client journey from pre-contract through go-live</li>
@@ -89,7 +90,10 @@ tags: [Journey Mapping, Stakeholder Research, Systems Thinking, Strategic Priori
       <li>Analysed where information was being collected (or not)</li>
       <li>Prioritised fixes based on business impact and feasibility</li>
     </ol>
-    <p>Timeline: approximately 4–5 weeks (interviews, mapping, analysis and synthesis)</p>
+    <div class="py-4">
+      <img src="/assets/img/retail-journeymap.png" class="img-fluid rounded" alt="Client onboarding journey map">
+      <p class="figure-caption text-center mt-2">End-to-end journey showing touchpoints, handoffs, and gaps across teams</p>
+    </div>
   </div>
 </div>
 
@@ -129,14 +133,16 @@ tags: [Journey Mapping, Stakeholder Research, Systems Thinking, Strategic Priori
 <div class="full-width-section" style="background-color: #fff; padding: 4rem 0;">
   <div class="container">
     <h3 class="page-label mb-3">Outcome</h3>
-    <p>For the first time, leadership and all three teams had a shared view of the full onboarding journey—where it broke down, why, and what to fix. The journey map became a reference point for cross-team conversations that hadn't been possible before.</p>
-    <p>Prioritised improvements are documented and ready for implementation (pending other roadmap priorities):</p>
+    <p>For the first time, leadership and all three teams had a shared view of the full onboarding journey—where it broke down, why, and what to fix.</p>
+    <h4 class="page-label mt-4 mb-3">Organisational impact</h4>
+    <p>The journey map created shared language across teams, made invisible handoffs and blockers visible to leadership, and enabled data-driven prioritisation of what to fix first.</p>
+    <h4 class="page-label mt-4 mb-3">Prioritised recommendations</h4>
     <ul>
-      <li>Systematise billing information collection upfront to prevent payment delays</li>
-      <li>Formalise handoff documentation across sales → ops → engineering</li>
-      <li>Enable self-service expansion for existing clients</li>
-      <li>Reduce operational load through better structured intake</li>
+      <li>Automate client account creation (eliminate 2-week delay)</li>
+      <li>Self-service onboarding portal for tier 1 clients</li>
+      <li>Clear ownership model for each onboarding phase</li>
     </ul>
+    <h4 class="page-label mt-4 mb-3">Current status</h4>
   </div>
 </div>
 

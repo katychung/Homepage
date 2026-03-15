@@ -112,21 +112,19 @@ together they created an inconsistent experience.</p>
     <ol>
       <li>Help beginners discover and use core features</li>
       <li>Give power users workflow efficiency (they already knew how to make videos, they cared about speed and scale)</li>
-      <li>Support brand asset management for enterprise customers</li>
     </ol>
     <p>We identified three user types to design for:</p>
     <ul>
       <li>New users: Creating their first video, needed guidance</li>
       <li>Product champions: Power users making many videos, needed efficiency</li>
-      <li>Decision-makers: HQ teams managing brand assets</li>
     </ul>
     <p>The solution was a progressive disclosure pattern applied consistently
     across the product that we called the "Toolbox":</p>
     <ul>
-      <li>Presets (beginner-friendly starting points)</li>
+      <li>Quick access (user's bookmarks)</li>
       <li>Recently Used (fast access for repeat users)</li>
       <li>Categories (organized browsing for discovery)</li>
-      <li>Brand Assets (priority access for managed accounts)</li>
+      <li>Custom (brand assets or custom)</li>
     </ul>
     <p>This single pattern could serve all three user types at different depths—beginners got clear starting points, power users got fast access to recents, and enterprise teams got brand control.</p>
     <img src="/assets/img/journey1.png" class="img-fluid rounded mt-4" alt="The Toolbox pattern">

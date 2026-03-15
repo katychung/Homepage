@@ -1,7 +1,7 @@
 /* ─────────── VARIABLES ─────────── */
 :root {
   --primary-color: #212529;     /* black */
-  --secondary-color: #D94F23;   /* orange */
+  --secondary-color: #5B7B7A;   /* orange */
   --sticky-1: #FFD966;
   --sticky-2: #80CAFF;
   --sticky-3: #85E0A3;
@@ -182,13 +182,13 @@ body.dark-mode .sidebar-bottom .dark-toggle-label::after {
   font-weight: 700;
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  color: rgba(33, 37, 41, 0.45);
+  color: #5B7B7A;
   margin-bottom: 0;
   font-family: 'Courier New', Courier, monospace;
 }
 
 body.dark-mode .page-label {
-  color: rgba(216, 216, 216, 0.45);
+  color: #5B7B7A;
 }
 
 /* ─────────── PROJECT META GRID ─────────── */
@@ -205,9 +205,16 @@ body.dark-mode .page-label {
   gap: 1.25rem 2rem;
 }
 
+.project-meta-grid > div:last-child {
+  grid-column: 1 / -1;
+}
+
 @media (min-width: 640px) {
   .project-meta-grid {
     grid-template-columns: auto auto auto 1fr;
+  }
+  .project-meta-grid > div:last-child {
+    grid-column: auto;
   }
 }
 
@@ -225,10 +232,6 @@ body.dark-mode .page-label {
   font-size: 0.875rem;
   line-height: 1.5;
   margin: 0;
-}
-
-.meta-skills {
-  opacity: 0.7;
 }
 
 /* ─────────── OTHER WORK ─────────── */
@@ -795,6 +798,62 @@ body.dark-mode .lang-switch-link:hover {
   color: rgba(216, 216, 216, 0.9);
 }
 
+/* ─────────── PASSWORD SCREEN ─────────── */
+.password-screen {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.password-screen-inner {
+  width: 100%;
+  max-width: 280px;
+}
+
+.password-screen-icon {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.6;
+}
+
+.password-screen-sub {
+  font-size: var(--text-sm);
+  color: rgba(33, 37, 41, 0.4);
+  margin: 0.25rem 0 0;
+}
+
+.password-screen-error {
+  font-size: var(--text-sm);
+  color: rgba(33, 37, 41, 0.55);
+}
+
+.password-screen-footnote {
+  font-size: var(--text-xs);
+  color: rgba(33, 37, 41, 0.35);
+  margin: 0;
+}
+
+.password-screen-footnote a,
+.password-screen-error a {
+  color: inherit;
+  text-decoration-color: inherit;
+}
+
+body.dark-mode .password-screen-sub {
+  color: rgba(216, 216, 216, 0.4);
+}
+
+body.dark-mode .password-screen-error {
+  color: rgba(216, 216, 216, 0.55);
+}
+
+body.dark-mode .password-screen-footnote {
+  color: rgba(216, 216, 216, 0.35);
+}
+
 /* ─────────── BYPASS MESSAGE OVERLAY ─────────── */
 .bypass-msg-wrap {
   position: fixed;
@@ -848,7 +907,7 @@ body.dark-mode .bypass-msg-wrap {
 .bypass-bar {
   height: 100%;
   width: 0%;
-  background: var(--primary-color);
+  background: var(--secondary-color);
   border-radius: 1px;
   animation: bypassLoad 1.6s cubic-bezier(0.4, 0, 0.6, 1) forwards;
 }

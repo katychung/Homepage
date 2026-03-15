@@ -2,8 +2,7 @@
 <script>
   (function() {
     var saved = localStorage.getItem('darkMode');
-    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (saved === 'enabled' || (saved === null && prefersDark)) {
+    if (saved === 'enabled') {
       document.body.classList.add('dark-mode');
     }
   })();
